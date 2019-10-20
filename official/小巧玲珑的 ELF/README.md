@@ -32,3 +32,33 @@ for i in range(len(aim)):
     one = (one - 2 * i) % 256
     print(chr(one), end="")
 ```
+
+## zzh 的解法
+
+先看一下程序里面的可见字符串
+
+```
+$ strings tinyELF
+please in put flag:
+correct
+```
+
+看起来输入正确的 flag 后会打印 `correct`。
+
+用 angr 求解什么样的输入可以使得程序输出 `correct`：
+
+```python
+import angr
+
+proj = angr.Project("tinyELF")
+simgr = proj.factory.simgr()
+simgr.explore(find=lambda s: b"correct" in s.posix.dumps(1))
+print(simgr.found[0].posix.dumps(0))
+```
+
+运行一下，得到 flag：
+
+```
+$ python3 solve.py
+b'flag{Linux_Syst3m_C4ll_is_4_f4scin4ting_t00ls}'
+```
