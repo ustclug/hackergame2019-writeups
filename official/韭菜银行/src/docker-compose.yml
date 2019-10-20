@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jcbank:
+    build: .
+    ports:
+      - 10016:5000
+    restart: always
+    environment:
+      - WEB3_INFURA_PROJECT_ID=请自己去 infura.io 申请一个 key
+      - contract_address=0xE575c9abD35Fa94F1949f7d559056bB66FddEB51
