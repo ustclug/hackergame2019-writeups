@@ -2,6 +2,8 @@
 
 花絮：本题最早源自 zzh 的一系列发言（“出个微软技术的题吧”、“用 PowerShell 搞个迷宫”），作为和 USTC LUG 还有关联的最大软粉的我就站了出来背锅。思考了一下怎么做个迷宫之后，决定用 PowerShell 的 `Provider` 机制进行实现。赶鸭子上架之下最终就是那样子一副勉强能玩的状态啦。
 
+本题 Provider 源码位于 [Blealtan/PSMaze](https://github.com/Blealtan/PSMaze)。感兴趣的同学可以围观一下。
+
 ## PowerShell 简介和一些私货
 
 PowerShell Core 是基于 .NET Core 实现的一个跨平台 shell，其语言设计继承自 Windows PowerShell，毫无疑问地 POSIX 不兼容。
