@@ -4,7 +4,7 @@
 
 ## 一个简单的整数溢出漏洞
 
-观察到 websocket 的 JavaScript 代码中，向服务器通信的代码如下：
+观察到 WebSocket 的 JavaScript 代码中，向服务器通信的代码如下：
 
 ```javascript
     $("#send").click(
@@ -20,7 +20,7 @@
 
 在“料理大市场”买鸡的时候，当 `v = -1900000000000000000` 时候，则会发生大整数溢出，并使得自己的攻击力溢出，而后挑战恶龙即可。
 
-最简单的做法是使用 Chrome 调试的功能，就可以完成拿到 flag 。首先在途中位置打断点。将 v 的值改为 -1900000000000000000。即可获得 flag
+最简单的做法是使用 Chrome 调试的功能，就可以完成拿到 flag 。首先在途中位置打断点。将 v 的值改为 -1900000000000000000。即可获得 flag。
 
 ![images/step1.png](images/step1.png)
 
@@ -30,7 +30,7 @@
 
 ## 使用 Python 的 websocket 库来做题
 
-也可以使用 exp.py 来获得flag。
+也可以使用 exp.py 来获得 flag。
 
 ![images/step4.png](images/step4.png)
 

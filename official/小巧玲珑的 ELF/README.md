@@ -62,5 +62,5 @@ print(simgr.found[0].posix.dumps(0))
 $ python3 solve.py
 b'flag{Linux_Syst3m_C4ll_is_4_f4scin4ting_t00ls}'
 ```
-## 出题人对zzh解法的评价
+## 出题人对 zzh 解法的评价
 路子够正宗，自动化分析万岁！

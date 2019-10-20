@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">献给最好的你</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">输入正确的密码以关闭音乐，获取 flag</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"获得 flag："</string>
+<!--    <string name="invalid_username">Not a valid username</string>-->
+    <string name="invalid_password">密码是一个大于 5 个字符的字符串</string>
+    <string name="login_failed">"密码错误。flag 获得失败。"</string>
+</resources>

@@ -1,0 +1,17 @@
+certifi==2019.6.16
+chardet==3.0.4
+Click==7.0
+dnspython==1.16.0
+eventlet==0.25.1
+Flask==1.1.1
+greenlet==0.4.15
+gunicorn==19.9.0
+idna==2.8
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+monotonic==1.5
+requests==2.22.0
+six==1.12.0
+urllib3==1.25.3
+Werkzeug==0.15.5
