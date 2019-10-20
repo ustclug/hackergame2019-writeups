@@ -155,7 +155,7 @@ models.update_last_login = update_last_login
 
 ### 你知道吗？Force push 来「撤销」机密信息的提交很多时候是没有用的。
 
-一开始在上传到 GitHub 的 openlug 的私仓的时候，一不小心把带 flag 的文件交上去了。一开始我就直接 force push 覆盖了，但是之后舍友 F（也是正则那道题的出题人）提醒我还有问题（见 https://ibugone.com/blog/2019/06/save-commit-from-github/）。~~差点被非预期~~
+一开始在上传到 GitHub 的 openlug 的私仓的时候，一不小心把带 flag 的文件交上去了。一开始我就直接 force push 覆盖了，但是之后舍友 F（也是正则那道题的出题人）提醒我还有问题（见 https://ibugone.com/blog/2019/06/save-commit-from-github/ ）。 ~~差点被非预期~~
 
 本地，可以输入 `git reflog` 来看你所有的修改记录，包括你的 `reset --hard` 操作。以下是一个示例。
 

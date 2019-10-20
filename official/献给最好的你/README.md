@@ -116,6 +116,6 @@ for index, item in enumerate(nums):
 
 ## 花絮
 
-校歌的音频下载自 https://vi.ustc.edu.cn/2011/0428/c7184a90250/page.htm，然后用 ffmpeg 转换成了 mp3。
+校歌的音频下载自 https://vi.ustc.edu.cn/2011/0428/c7184a90250/page.htm ，然后用 ffmpeg 转换成了 mp3。
 
 另外这是我第一次用 Kotlin 写代码，感觉还行吧。其实这个 App 就是从 Android Studio 的一个 template 改过来的。
