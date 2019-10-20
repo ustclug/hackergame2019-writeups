@@ -21,7 +21,7 @@ sudo chroot rootfs ih-linux
 * Step5: 将 /bin/sh 和 /bin/sleep 两个程序复制到 rootfs 中。使用 ldd  命令来查看他们的依赖。出题者在 alpine 中构建的rootfs 因此依赖较少，有 /dev/null, /lib/ld-musl-x86_64.so.1 和 /lib/libc.musl-x86_64.so.1 将这些依赖设备和动态链接库复制到指定位置。
 * Step6: 当程序运行到此处时候，输入 sleep 10
 
-## 赛棍·解法
+## 逆向大手子·解法
 
 本题使用 golang 程序编写，去掉了调试信息和符号表。同时，flag使用 aes 加密硬编码在程序中。逆向大手子可以使用二进制逆向分析的技术来获取 flag 。
 
