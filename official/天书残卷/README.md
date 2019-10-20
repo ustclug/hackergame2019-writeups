@@ -1,22 +1,16 @@
-# hackergame 2019
+# 天书残卷
 
-## 天书残卷 writeup
+花絮：原本出题人喜欢玩一玩正常的逆向，但是命题组不同意全部是一个类型的逆向，于是出题人只能找一找对所有人来说都是新鲜事物的 Whitespace 作为逆向语言。
 
-花絮：原本出题人喜欢玩一玩正常的逆向，但是命题组不同意全部是一个类型的逆向，于是出题人只能找一找对所有人来说都是新鲜事物的whitespace作为逆向语言。
-
-whitespace是一个十分神奇的语言。Whitespace却只视空格 （space）、 制表符 （tabs）和换行 （new lines）为语法的一部分，它的直译器忽略所有非空白字元。
+Whitespace 是一个十分神奇的语言。它只视空格 (space)、制表符 (tabs) 和换行 (new lines) 为语法的一部分，它的直译器忽略所有非空白字元。
 
 这些字符都是不可见字符，所以像天书一样难以理解。
 
-我们拿winhex或者010editor这种好用的文本编辑器打开。
+我们拿 WinHex 或者 010editor 这种好用的文本编辑器打开。
 
-使用以下whitespace反汇编器。
+使用[这个 Whitespace 反汇编器](https://vii5ard.github.io/whitespace/)。
 
-```html
-https://vii5ard.github.io/whitespace/
-```
-
-将我们的whitespace代码复制到它的输入框。
+将我们的 Whitespace 代码复制到它的输入框。
 
 我们将得到以下结果。
 
@@ -542,4 +536,4 @@ label_63:
 ret
 ```
 
-主要关注label4-label52之间的内容。仔细阅读会发现很简单。把输入的字符的ascii与2相加，然后与要对比的ascii相减，如果等于0则说明该输入的字符正确。否则会输出不正确。所以最后的flag就是label4-label52之间被压栈的数字减2的ASCII。
+主要关注 `label4`-`label52` 之间的内容。仔细阅读会发现很简单。把输入的字符的 ASCII 与 2 相加，然后与要对比的 ASCII 相减，如果等于 0 则说明该输入的字符正确，否则会输出不正确。所以最后的 flag 就是 `label4`-`label52` 之间被压栈的数字减 2 的 ASCII。
