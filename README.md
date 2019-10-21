@@ -17,7 +17,7 @@
 | [签到题](official/签到题/README.md)               | [文件、源代码](official/签到题/src)                   |
 | [白与夜](official/白与夜/README.md)           | [文件、源代码](official/白与夜/src)                  |
 | [信息安全 2077](official/信息安全_2077/README.md)           | [文件、源代码](official/信息安全_2077/src)                      |
-| [宇宙终极问题](official/宇宙终极问题/README.md)           | [文件、源代码](official/宇宙终极问题/src)                   |
+| [宇宙终极问题（未完成）](official/宇宙终极问题/README.md)           | [文件、源代码](official/宇宙终极问题/src)                   |
 | [网页读取器](official/网页读取器/README.md)                  | [文件、源代码](official/网页读取器/src)                      |
 | [达拉崩吧大冒险（源代码暂缺）](official/达拉崩吧大冒险/README.md)                   | [文件、源代码](official/达拉崩吧大冒险/src)                      |
 | [Happy LUG](official/Happy_LUG/README.md)         | -                   |
