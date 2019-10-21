@@ -1,10 +1,16 @@
 # hackergame2019-writeups
 
-这里是中国科学技术大学第六届信息安全大赛的官方与非官方题解。欢迎各位选手以 Pull Request 的形式提交自己的 write-up。如果有任何疑问和建议，也欢迎提 issue。
+本文档收集整理了中国科学技术大学第六届信息安全大赛的官方与非官方题解。
+
+该仓库仍在活跃更新中，欢迎各位选手以 Pull Request 的形式提交自己的 write-up （players 目录）。
+
+若大家对本题解有任何疑问或改进建议，欢迎 [提 issue](https://github.com/ustclug/hackergame2019-writeups/issues/new)
+
+**还没有详细题解的题目会在这几天陆续补充，请耐心等待！**
 
 ## 目录
 
-### 官方
+### 官方题解
 
 | 题目 write-up                                                | 文件、源代码                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------ |
@@ -37,7 +43,12 @@
 | [大整数分解锦标赛](official/大整数分解锦标赛/README.md)     | [文件、源代码](official/大整数分解锦标赛/src)               |
 | [Flag 红包](official/Flag_红包/README.md)     | [文件、源代码](official/Flag_红包/src)               |
 
-### 选手
+### 来自选手
+
+## 其他资源
+
+- [中国科学技术大学第五届信息安全大赛题解](https://github.com/ustclug/hackergame2018-writeups)
+- [中国科学技术大学第四届信息安全大赛题解](https://volltin.gitbooks.io/hackergame2017-writeup/)
 
 ## 版权声明
 
