@@ -35,7 +35,7 @@
 | [失落的圣物](official/失落的圣物/README.md)     | [文件、源代码](official/失落的圣物/src)                 |
 | [2077 海底捞针](official/2077_海底捞针/README.md)     | [文件、源代码](official/2077_海底捞针/src)               |
 | [大整数分解锦标赛](official/大整数分解锦标赛/README.md)     | [文件、源代码](official/大整数分解锦标赛/src)               |
-| [Flag 红包](official/Flag 红包/README.md)     | [文件、源代码](official/Flag 红包/src)               |
+| [Flag 红包](official/Flag_红包/README.md)     | [文件、源代码](official/Flag_红包/src)               |
 
 ### 选手
 
