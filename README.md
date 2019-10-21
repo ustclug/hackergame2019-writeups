@@ -35,11 +35,11 @@
 | [被泄漏的姜戈](official/被泄漏的姜戈/README.md)       | [文件、源代码](https://github.com/openlug/django-common)                |
 | [无限猴子定理](official/无限猴子定理/README.md)           | [文件、源代码](official/无限猴子定理/src)                  |
 | [PowerShell 迷宫](official/PowerShell_迷宫/README.md) | [文件、源代码](https://github.com/Blealtan/PSMaze)             |
-| [韭菜银行（未完成）](official/韭菜银行/README.md)  | [文件、源代码](official/韭菜银行/src)              |
+| [韭菜银行](official/韭菜银行/README.md)  | [文件、源代码](official/韭菜银行/src)              |
 | [无法利用的漏洞](official/无法利用的漏洞/README.md)       | [文件、源代码](official/无法利用的漏洞/src)                  |
 | [没有 BUG 的教务系统](official/没有_BUG_的教务系统/README.md) | [文件、源代码](official/没有_BUG_的教务系统/src)                |
 | [失落的圣物](official/失落的圣物/README.md)     | [文件、源代码](official/失落的圣物/src)                 |
-| [2077 海底捞针（文件暂缺）](official/2077_海底捞针/README.md)     | [文件、源代码](official/2077_海底捞针/src)               |
+| [2077 海底捞针](official/2077_海底捞针/README.md)     | [文件、源代码](official/2077_海底捞针/src)               |
 | [大整数分解锦标赛（未完成）](official/大整数分解锦标赛/README.md)     | [文件、源代码](official/大整数分解锦标赛/src)               |
 | [Flag 红包（未完成）](official/Flag_红包/README.md)     | [文件、源代码](official/Flag_红包/src)               |
 
