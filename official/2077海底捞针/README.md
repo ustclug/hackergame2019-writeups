@@ -44,7 +44,8 @@ y = k X + \epsilon, |epsilon_i| <= 0.5
 \argmin_k \sum_i(k * x_i_0 - y_i)^2 + \alpha * \sum | k |
 ```
 
-Terry Tao 等人证明了很多情况下 1-norm 可以完美代替 0-norm，或者可以取得很好的近似效果，因此上面的优化形式经常被用于稀疏感知等领域(https://scikit-learn.org/stable/auto_examples/applications/plot_tomography_l1_reconstruction.html#sphx-glr-auto-examples-applications-plot-tomography-l1-reconstruction-py)。这个方法还有一个非常著名的名字：Lasso。题目中的 “拉索集团” 其实也是暗示这个词。所以我们可以直接用 Lasso 来解决这个问题。方法包括但不限于调包等。Lasso 方法会返回一个 k，其中大部分内容为 0 或者非常小。
+Terry Tao 等人证明了很多情况下 1-norm 可以完美代替 0-norm，或者可以取得很好的近似效果，因此上面的优化形式经常被用于稀疏感知等领域(https://scikit-learn.org/stable/auto_examples/applications/plot_tomography_l1_reconstruction.html#sphx-glr-auto-examples-applications-plot-tomography-l1-reconstruction-py)。
+这个方法还有一个非常著名的名字：Lasso。题目中的 “拉索集团” 其实也是暗示这个词。所以我们可以直接用 Lasso 来解决这个问题。方法包括但不限于调包等。Lasso 方法会返回一个 k，其中大部分内容为 0 或者非常小。
 
 最后一个问题是，如何确定 N 和 \alpha 呢？这不是一个很容易解释清楚的问题，不过本题没有故意为难选手，在默认 \alpha = 1 时就可以明确看到效果：选手只要使用一种方法 （两项之间的差分，比值，或者甚至是绝对大小，或者某部分数据占总大小的比例），就可以发现被用于平均的图片和未被用于平均的图片的系数 k 有着很大差异。\alpha 在一定范围内都是有效的（尤其是增大的情况），如果较小可能会出现比预期更多的图片，但是大部分数量都较多，可以在几次尝试提交flag后被排除。
 
