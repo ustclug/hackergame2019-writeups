@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  idiom:
+    build: .
+    restart: always
+    deploy:
+      replicas: 64
+    labels:
+      - "traefik.port=5000"
+      - "traefik.frontend.rule=PathPrefix:/"
+      - "traefik.backend.loadbalancer.stickiness=true"
+    ports:
+      - "127.0.0.1::5000"
+    volumes:
+        - data-volume:/data
+  reverse-proxy:
+    image: traefik:1.7
+    command: --web --docker
+    ports:
+      - "8081:80"
+      - "8082:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+    data-volume:
