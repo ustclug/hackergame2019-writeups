@@ -26,9 +26,9 @@
 | [天书残篇](official/天书残篇/README.md) | [文件、源代码](official/天书残篇/src)            |
 | [我想要个家](official/我想要个家/README.md)     | [文件、源代码](official/我想要个家/src)                |
 | [十次方根](official/十次方根/README.md) | [文件、源代码](official/十次方根/src) |
-| [被泄漏的姜戈](official/被泄漏的姜戈/README.md)       | [文件、源代码](official/被泄漏的姜戈/src)                |
+| [被泄漏的姜戈](official/被泄漏的姜戈/README.md)       | [文件、源代码](https://github.com/openlug/django-common)                |
 | [无限猴子定理](official/无限猴子定理/README.md)           | [文件、源代码](official/无限猴子定理/src)                  |
-| [PowerShell 迷宫](official/PowerShell_迷宫/README.md) | [文件、源代码](official/PowerShell_迷宫/src)             |
+| [PowerShell 迷宫](official/PowerShell_迷宫/README.md) | [文件、源代码](https://github.com/Blealtan/PSMaze)             |
 | [韭菜银行](official/韭菜银行/README.md)  | [文件、源代码](official/韭菜银行/src)              |
 | [无法利用的漏洞](official/无法利用的漏洞/README.md)       | [文件、源代码](official/无法利用的漏洞/src)                  |
 | [没有 BUG 的教务系统](official/没有_BUG_的教务系统/README.md) | [文件、源代码](official/没有_BUG_的教务系统/src)                |
