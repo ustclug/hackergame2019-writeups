@@ -31,7 +31,6 @@ PowerShell Core 是基于 .NET Core 实现的一个跨平台 shell，其语言�
 
 ```powershell
 using namespace System.Collections.Generic
-using namespace System
 # 初始化数据结构
 $queue = [Queue[string]]::new()
 $queue.Enqueue("Maze:/")
@@ -41,10 +40,12 @@ while ($queue.Count -ne 0) {
     $path = $queue.Dequeue()
     $gi = Get-Item $path
     $xy = [Tuple[int, int]]::new($gi.X, $gi.Y)
-    if (visited.Contains($xy)) { continue }
+    if ($visited.Contains($xy)) { continue }
+    $visited.Add($xy) | Out-Null
     if ($gi.Flag -ne $null) {
         Write-Output $path
         Write-Output $gi.Flag
+        break
     }
     Get-ChildItem $path | Foreach-Object { $queue.Enqueue("$path/$($_.Direction)") } | Out-Null
 }
