@@ -1,0 +1,256 @@
+include io
+
+  push 10
+  call io_init
+  pushs "Please input your flag:"
+  call printnl
+  call read_string
+  call push_string
+check_100:
+  add 2
+  sub 127
+  jz check_101
+  jmp error
+check_101:
+  add 2
+  sub 53
+  jz check_102
+  jmp error
+check_102:
+  add 2
+  sub 105
+  jz check_103
+  jmp error
+check_103:
+  add 2
+  sub 54
+  jz check_104
+  jmp error
+check_104:
+  add 2
+  sub 119
+  jz check_105
+  jmp error
+check_105:
+  add 2
+  sub 105
+  jz check_106
+  jmp error
+check_106:
+  add 2
+  sub 112
+  jz check_107
+  jmp error
+check_107:
+  add 2
+  sub 54
+  jz check_108
+  jmp error
+check_108:
+  add 2
+  sub 110
+  jz check_109
+  jmp error
+check_109:
+  add 2
+  sub 97
+  jz check_110
+  jmp error
+check_110:
+  add 2
+  sub 111
+  jz check_111
+  jmp error
+check_111:
+  add 2
+  sub 54
+  jz check_112
+  jmp error
+check_112:
+  add 2
+  sub 116
+  jz check_113
+  jmp error
+check_113:
+  add 2
+  sub 105
+  jz check_114
+  jmp error
+check_114:
+  add 2
+  sub 50
+  jz check_115
+  jmp error
+check_115:
+  add 2
+  sub 116
+  jz check_116
+  jmp error
+check_116:
+  add 2
+  sub 114
+  jz check_117
+  jmp error
+check_117:
+  add 2
+  sub 97
+  jz check_118
+  jmp error
+check_118:
+  add 2
+  sub 118
+  jz check_119
+  jmp error
+check_119:
+  add 2
+  sub 110
+  jz check_120
+  jmp error
+check_120:
+  add 2
+  sub 119
+  jz check_121
+  jmp error
+check_121:
+  add 2
+  sub 101
+  jz check_122
+  jmp error
+check_122:
+  add 2
+  sub 107
+  jz check_123
+  jmp error
+check_123:
+  add 2
+  sub 104
+  jz check_124
+  jmp error
+check_124:
+  add 2
+  sub 104
+  jz check_125
+  jmp error
+check_125:
+  add 2
+  sub 107
+  jz check_126
+  jmp error
+check_126:
+  add 2
+  sub 102
+  jz check_127
+  jmp error
+check_127:
+  add 2
+  sub 97
+  jz check_128
+  jmp error
+check_128:
+  add 2
+  sub 99
+  jz check_129
+  jmp error
+check_129:
+  add 2
+  sub 97
+  jz check_130
+  jmp error
+check_130:
+  add 2
+  sub 117
+  jz check_131
+  jmp error
+check_131:
+  add 2
+  sub 107
+  jz check_132
+  jmp error
+check_132:
+  add 2
+  sub 97
+  jz check_133
+  jmp error
+check_133:
+  add 2
+  sub 53
+  jz check_134
+  jmp error
+check_134:
+  add 2
+  sub 101
+  jz check_135
+  jmp error
+check_135:
+  add 2
+  sub 54
+  jz check_136
+  jmp error
+check_136:
+  add 2
+  sub 114
+  jz check_137
+  jmp error
+check_137:
+  add 2
+  sub 117
+  jz check_138
+  jmp error
+check_138:
+  add 2
+  sub 53
+  jz check_139
+  jmp error
+check_139:
+  add 2
+  sub 118
+  jz check_140
+  jmp error
+check_140:
+  add 2
+  sub 107
+  jz check_141
+  jmp error
+check_141:
+  add 2
+  sub 106
+  jz check_142
+  jmp error
+check_142:
+  add 2
+  sub 89
+  jz check_143
+  jmp error
+check_143:
+  add 2
+  sub 125
+  jz check_144
+  jmp error
+check_144:
+  add 2
+  sub 105
+  jz check_145
+  jmp error
+check_145:
+  add 2
+  sub 99
+  jz check_146
+  jmp error
+check_146:
+  add 2
+  sub 110
+  jz check_147
+  jmp error
+check_147:
+  add 2
+  sub 104
+  jz check_148
+  jmp error
+check_148:
+  pushs "Congratulations!"
+  call printnl
+  exit
+error:
+  pushs "I think your flag is incorrect!"
+  call printnl
+  exit
