@@ -1,7 +1,7 @@
 # 无法利用的漏洞
 本题考查利用vsyscall实现漏洞利用，利用条件是栈上的数据没有清理干净同时系统开启了vsyscall。这道题是希望理解了基本ROP的同学通过提示“Do you know how to make syscall faster?”学习vsyscall的利用方法。这个漏洞有趣的地方在于，只要满足利用条件，即使开了aslr而且编译器保护全开也能劫持控制流。
 
-#解答
+# 解答
 vsyscall的全称是virtual system call，当初引入这个机制是为了减少系统调用时从用户态切换到内核态的开销。某些系统调用并不会向内核传递参数，而仅仅是从内核里请求读取某个数据，比如gettimeofday。所以可以直接把gettimeofday的实现直接映射到用户空间中，这样就避免了用户态到内核态转换的开销。（实际上还有个好处是对于gettimeofday这种对时间要求比较精确的函数，实现快速系统调用更加的科学）
 但是vsyscall有很严重的安全问题，vsyscall用户空间映射的地址是固定的，64位系统上是0xffffffffff600000。把题目在开启了vsyscall的机器上跑起来，查看一下内存映射状态如下：
 
