@@ -20,7 +20,7 @@
 | [宇宙终极问题](official/宇宙终极问题/README.md)           | [文件、源代码](official/宇宙终极问题/src)                   |
 | [网页读取器](official/网页读取器/README.md)                  | [文件、源代码](official/网页读取器/src)                      |
 | [达拉崩吧大冒险（源代码暂缺）](official/达拉崩吧大冒险/README.md)                   | [文件、源代码](official/达拉崩吧大冒险/src)                      |
-| [Happy LUG](official/Happy_LUG/README.md)         | [文件、源代码](official/Happy_LUG/src)                   |
+| [Happy LUG](official/Happy_LUG/README.md)         | -                   |
 | [正则验证器](official/正则验证器/README.md)   | [文件、源代码](official/正则验证器/src)              |
 | [不同寻常的 Python 考试](official/不同寻常的_Python_考试/README.md)             | [文件、源代码](official/不同寻常的_Python_考试/src)                  |
 | [小巧玲珑的 ELF](official/小巧玲珑的_ELF/README.md) | [文件、源代码](official/小巧玲珑的_ELF/src)          |
