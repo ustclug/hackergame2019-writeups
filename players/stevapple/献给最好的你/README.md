@@ -14,6 +14,6 @@
 -  大部分情况下该输出字符串的结尾有 = 号
 -  同一输入对应的输出一致
 
-不难猜测这是经过 base64 编码的输入值，经验证发现确实如此。
+不难猜测该输出与 base64 编码有关；经过对输入值进行 base64 编码发现恰好与输出值大小写相反。
 
-接下来，快速浏览该目录的各 smali 文件，找到其中以 = 号结尾的字符串（因为不知道如何搜索所以我本人是肉眼观察的），定位到 `data/LoginDataSource.smali` 的第 180 行，将该字符串 `"AgfJA2vYz2fTztiWmtL3AxrOzNvUiq=="` 进行 base64 解码后得到密码，输入后得到 flag。
+接下来，快速浏览该目录的各 smali 文件，找到其中以 = 号结尾的字符串（因为不知道如何搜索所以我本人是肉眼观察的），定位到 `data/LoginDataSource.smali` 的第 180 行，先将该字符串 `"AgfJA2vYz2fTztiWmtL3AxrOzNvUiq=="` 大小写反转，再进行 base64 解码就能得到密码，输入后得到 flag。
