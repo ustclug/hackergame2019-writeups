@@ -51,6 +51,8 @@
 
 [XhyEax](players/Xhy)
 
+[三日月綾香](players/三日月綾香)
+
 ## 其他资源
 
 - [中国科学技术大学第五届信息安全大赛题解](https://github.com/ustclug/hackergame2018-writeups)
