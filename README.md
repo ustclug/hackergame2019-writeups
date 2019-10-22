@@ -59,6 +59,8 @@
 
 [猫神様のメモ帳](players/猫神様のメモ帳)
 
+[xukl](players/xukl)
+
 [stevapple](players/stevapple)
 
 ## 其他资源
