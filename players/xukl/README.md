@@ -17,3 +17,10 @@
 > Output lines consist of the frame number of the detected frame, the percentage of blackness, the position in the file if known or -1 and the timestamp in seconds. 
 
 于是再`ffplay -ss 58`这样看看这帧到底有什么flag就好啦。
+
+此法优点：
+* 命令短，不用自己写代码
+* 速度较快
+
+缺点：
+* 查个文档累死人
