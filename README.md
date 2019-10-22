@@ -47,7 +47,7 @@
 
 [Coxxs](https://coxxs.me/1321)
 
-[XhyEax](players/Xhy)
+[XhyEax](https://xhyeax.github.io/2019/10/22/hackersgame-2019-writeup/)
 
 [三日月綾香](players/三日月綾香)
 
