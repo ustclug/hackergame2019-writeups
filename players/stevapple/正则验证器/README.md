@@ -6,4 +6,4 @@
 
 搜索关键字包括：正则、死循环、无限、循环、卡死，等。
 
-最终找到这一网页 [如何中断一个长时间运行的”无限”Java正则表达式](https://blog.csdn.net/hongqishi/article/details/41442341)。直接参考其源码中的正则表达式和测试数据，验证通过，得到 flag。
+最终找到这一网页[如何中断一个长时间运行的”无限”Java正则表达式](https://blog.csdn.net/hongqishi/article/details/41442341)。直接参考其源码中的正则表达式和测试数据，验证通过，得到 flag。
