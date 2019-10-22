@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达拉崩吧大冒险</title>
+    <link rel="stylesheet" href="/statics/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/statics/css/default.css" >
+    <script src="/statics/js/jquery.min.js" ></script>
+    <script src="/statics/js/default.js" ></script>
+    <script src="/statics/js/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+
+<!-- 这里是 Narbar -->
+<div class="up">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-light" href="#">达拉崩吧大冒险</a>
+        <ul class="nav mr-auto">
+            <li class="nav-item text-light mr-auto"><a id="start">重新开始罪恶的一生</a></li>
+            <li class="nav-item text-light mr-auto"><a href="https://www.bilibili.com/video/av9372087/">有这样一个故事</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="outdiv">
+
+    <div class="maindiv mt-3" id="alist">
+    </div>
+
+    <div class="sidediv mt-3" id="info">
+        <h4>Name:</h4>
+        <p id="info_name"></p>
+        <h4>Money:</h4>
+        <p id="info_money"></p>
+        <h4>Attack:</h4>
+        <p id="info_attack"></p>
+    </div>
+
+    <div class="down">
+        <form class="form-inline">
+            <div class="form-group mr-2 ml-2" >
+                <select id="input" style="height: 38px;">
+                </select>
+            </div>
+            <button id="send"  type="button" class="btn btn-primary" style="border-radius: 0;">Send</button>
+        </form>
+    </div>
+
+</div>
+
+<script>
+
+
+    let opts;
+
+    let host = window.location.host;
+    let ws = new WebSocket("ws://"+host+"/ws");
+
+    ws.onopen = function(evt) {
+        addMsg("旁白","进入同步！");
+    };
+
+    ws.onmessage = function(evt) {
+        console.log( "Received Message: " + evt.data);
+        js = JSON.parse(evt.data);
+        addMsg(js["From"],js["Content"]);
+        updateState(js["State"]);
+        loadOptions(js["Options"]);
+        opts = js["Options"];
+
+        let div = document.getElementById('alist');
+        div.scrollTop = div.scrollHeight;
+    };
+
+    ws.onclose = function(evt) {
+        addMsg("旁白","失去同步！");
+    };
+
+    $("#send").click(
+        function () {
+            let v = $("#input option:selected").val();
+            addMsg("我", opts[parseInt(v)]);
+            ws.send(v)
+        }
+    );
+
+    $("#start").click(function () {
+            if (ws.readyState !== WebSocket.CLOSED){
+                ws.close()
+            }
+            location.reload();
+        }
+    );
+
+</script>
+</body>
+</html>
