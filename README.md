@@ -19,7 +19,7 @@
 | [信息安全 2077](official/信息安全_2077/README.md)           | [文件、源代码](official/信息安全_2077/src)                      |
 | [宇宙终极问题](official/宇宙终极问题/README.md)           | [文件、源代码](official/宇宙终极问题/src)                   |
 | [网页读取器](official/网页读取器/README.md)                  | [文件、源代码](official/网页读取器/src)                      |
-| [达拉崩吧大冒险（源代码暂缺）](official/达拉崩吧大冒险/README.md)                   | [文件、源代码](official/达拉崩吧大冒险/src)                      |
+| [达拉崩吧大冒险](official/达拉崩吧大冒险/README.md)                   | [文件、源代码](official/达拉崩吧大冒险/src)                      |
 | [Happy LUG](official/Happy_LUG/README.md)         | -                   |
 | [正则验证器](official/正则验证器/README.md)   | [文件、源代码](official/正则验证器/src)              |
 | [不同寻常的 Python 考试](official/不同寻常的_Python_考试/README.md)             | [文件、源代码](official/不同寻常的_Python_考试/src)                  |

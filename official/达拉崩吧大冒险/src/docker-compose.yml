@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  wa:
+    build: .
+    ports:
+      - 10021:80
+    restart: always

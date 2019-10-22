@@ -1,0 +1,11 @@
+FROM alpine:latest
+LABEL auther="ertuil"
+
+RUN mkdir /app
+WORKDIR /app
+
+ADD bin/wa-linux /app
+ADD flag.txt /app
+RUN chmod +x /app/wa-linux
+
+CMD [ "./wa-linux"]

@@ -1,0 +1,43 @@
+html  {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.outdiv {
+    display: -webkit-flex;
+    height: 100%;
+    display: grid;
+    grid-template-rows:  4fr 1fr;
+    grid-template-columns: 65% 35%;
+}
+
+.maindiv {
+    margin-left: 20px ;
+    margin-right: 20px ;
+}
+
+.sidediv {
+    margin-left: 20px ;
+    margin-right: 20px ;
+}
+
+.down {
+    grid-auto-flow: row;
+}
+
+#alist {
+    border-right:  1px solid #ccc;
+    overflow: scroll;
+    overflow-scrolling: touch;
+}
