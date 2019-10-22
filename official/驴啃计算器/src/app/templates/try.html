@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .challenge-number {
+            font-weight: bold;
+        }
+        .help-block {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<main role="main" class="container">
+    <form class="form-horizontal" action="try" method="POST">
+        <fieldset>
+            <div id="legend" class="">
+                <legend class="">Challenges</legend>
+            </div>
+            <div class="control-group">
+
+                <!-- Text input-->
+                <label class="control-label" for="input01">Challenge 1: <span class="challenge-number" id="c1">{{ cha[0] }}</span></label>
+                <div class="controls">
+                    <input type="text" id="a1" name="a1" placeholder="sin,cos,x^2,sqrt,1/x,-x,..." class="input-xlarge">
+                    <p class="help-block">{{ resp[0] if resp }}</p>
+                </div>
+
+                <!-- Text input-->
+                <label class="control-label" for="input02">Challenge 2: <span class="challenge-number" id="c2">{{ cha[1] }}</span></label>
+                <div class="controls">
+                    <input type="text" id="a2" name="a2" placeholder="sin,cos,x^2,sqrt,1/x,-x,..." class="input-xlarge">
+                    <p class="help-block">{{ resp[1] if resp }}</p>
+                </div>
+
+                <!-- Text input-->
+                <label class="control-label" for="input03">Challenge 3: <span class="challenge-number" id="c3">{{ cha[2] }}</span></label>
+                <div class="controls">
+                    <input type="text" id="a3" name="a3" placeholder="sin,cos,x^2,sqrt,1/x,-x,..." class="input-xlarge">
+                    <p class="help-block">{{ resp[2] if resp }}</p>
+                </div>
+
+                <input type="hidden" id="a" name="a" value="yes">
+            </div>
+
+            <div class="control-group">
+
+                <!-- Button -->
+                <div class="controls">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+    <div>
+        <p></p>
+        <p>You will receive the
+            {% if flag %}
+                <code>{{ flag }}</code>
+            {% else %}
+                <code>flag{<!--but this is not real flag, sorry!-->}</code>
+            {% endif %}
+            when you win the 3 challenges at one time.</p>
+        <p>Your challenges will be re-generated when you submit a WRONG solution.</p>
+        <p>Your solution must be like: f1,f2,f3,...,fn where fi has appeared in the <a href="/">index</a>,
+            e.g. "cos,exp,log,tanh" will leave 0.7615941559557649 (≈tanh(log(exp(cos(0))))) on the screen.</p>
+        <p>You can use <code>python-requests</code> to implement the magic! see: <a href="/static/poc.py">poc.py</a></p>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

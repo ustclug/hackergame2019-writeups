@@ -1,0 +1,10 @@
+version: '3'
+services:
+    web0:
+        build: .
+        ports:
+            - "10024:8000"
+        restart: always
+        volumes:
+            - "./app:/app"
+            - "./log:/var/log/gunicorn/:rw"
