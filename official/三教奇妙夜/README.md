@@ -58,6 +58,17 @@ ffmpeg -skip_frame nokey -i output.mp4 -vsync 0 -r 30 -f image2 thumbnails-%02d.
 
 我也很好奇是否有只用 `ffmpeg` 完成本题的做法，有的话欢迎投稿你的 wp（
 
+使用ffmpeg分析帧之间的差别并输出具有差别的帧
+参考 https://www.bogotobogo.com/FFMpeg/ffmpeg_thumbnails_select_scene_iframe.php 中的 “Capturing scene change“ 一节
+
+```
+ffmpeg -i input.mp4 -vf  "select=gt(scene\,0.3), scale=320:240" -vsync vfr flag_frame%03d.png
+```
+
+即可输出带有flag的关键帧。
+
+（一共能输出12张图片，其中包括6张带有flag的图片）
+
 ## 花絮
 
 我一开始想用非线编软件来出这道题的，但是对于一个 ~12h 的视频项目来说，编辑和导出都是一种折磨，最后一次尝试导出的时候还把我的电脑搞到 kernel panic 了，于是转 `ffmpeg` 了。
