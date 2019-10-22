@@ -572,14 +572,14 @@ int main(){
 
 shellcode:
 
-http://shell-storm.org/shellcode/
+[http://shell-storm.org/shellcode/](http://shell-storm.org/shellcode/)
 
-https://www.anquanke.com/post/id/85871
+[https://www.anquanke.com/post/id/85871](https://www.anquanke.com/post/id/85871)
 
-http://blog.eonew.cn/archives/1125#x64
+[http://blog.eonew.cn/archives/1125#x64](http://blog.eonew.cn/archives/1125#x64)
 
-http://blog.sina.com.cn/s/blog_a661ecd501012xsr.html
+[http://blog.sina.com.cn/s/blog_a661ecd501012xsr.html](http://blog.sina.com.cn/s/blog_a661ecd501012xsr.html)
 
 如何用三角函数得出任意一个正有理数:
 
-http://blog.sina.com.cn/s/blog_a661ecd501012xsr.html
+[http://blog.sina.com.cn/s/blog_a661ecd501012xsr.html](http://blog.sina.com.cn/s/blog_a661ecd501012xsr.html)
