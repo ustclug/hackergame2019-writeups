@@ -37,13 +37,13 @@ y = k X + \epsilon, |epsilon_i| <= 0.5
 稀疏性原则上要求求解以下最优化问题：
 
 ```
-\argmin_k \sum_i(k * x_i - y_i)^2 + \alpha * norm_0(k)
+\argmin_k \sum_i(\sum_j k_j * x_j_i - y_i)^2 + \alpha * norm_0(k)
 ```
 
 其中 \alpha 是一个系数，越大代表越稀疏。norm_0 是 0-范数，在这里表示非 0 的元素数量。但是优化 norm_0 是个 NP-hard 问题，所以一般采用 norm_1， 即 1-范数：
 
 ```
-\argmin_k \sum_i(k * x_i - y_i)^2 + \alpha * \sum | k |
+\argmin_k \sum_i(\sum_j k_j * x_j_i - y_i)^2 + \alpha * \sum | k |
 ```
 
 Terry Tao 等人证明了很多情况下 1-norm 可以完美代替 0-norm，或者可以取得很好的近似效果，因此上面的优化形式经常被用于稀疏感知等领域(https://scikit-learn.org/stable/auto_examples/applications/plot_tomography_l1_reconstruction.html#sphx-glr-auto-examples-applications-plot-tomography-l1-reconstruction-py)。
