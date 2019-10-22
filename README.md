@@ -61,6 +61,7 @@
 
 ## 其他资源
 
+- [知乎：参加中国科学技术大学第六届信息安全大赛（Hackergame 2019）是怎样一种体验？](https://www.zhihu.com/question/351947330)
 - [中国科学技术大学第五届信息安全大赛题解](https://github.com/ustclug/hackergame2018-writeups)
 - [中国科学技术大学第四届信息安全大赛题解](https://volltin.gitbooks.io/hackergame2017-writeup/)
 
