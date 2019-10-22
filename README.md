@@ -17,7 +17,7 @@
 | [签到题](official/签到题/README.md)               | [文件、源代码](official/签到题/src)                   |
 | [白与夜](official/白与夜/README.md)           | [文件、源代码](official/白与夜/src)                  |
 | [信息安全 2077](official/信息安全_2077/README.md)           | [文件、源代码](official/信息安全_2077/src)                      |
-| [宇宙终极问题（未完成）](official/宇宙终极问题/README.md)           | [文件、源代码](official/宇宙终极问题/src)                   |
+| [宇宙终极问题](official/宇宙终极问题/README.md)           | [文件、源代码](official/宇宙终极问题/src)                   |
 | [网页读取器](official/网页读取器/README.md)                  | [文件、源代码](official/网页读取器/src)                      |
 | [达拉崩吧大冒险（源代码暂缺）](official/达拉崩吧大冒险/README.md)                   | [文件、源代码](official/达拉崩吧大冒险/src)                      |
 | [Happy LUG](official/Happy_LUG/README.md)         | -                   |
@@ -41,7 +41,7 @@
 | [失落的圣物](official/失落的圣物/README.md)     | [文件、源代码](official/失落的圣物/src)                 |
 | [2077 海底捞针](official/2077_海底捞针/README.md)     | [文件、源代码](official/2077_海底捞针/src)               |
 | [大整数分解锦标赛](official/大整数分解锦标赛/README.md)     | [文件、源代码](official/大整数分解锦标赛/src)               |
-| [Flag 红包（未完成）](official/Flag_红包/README.md)     | [文件、源代码](official/Flag_红包/src)               |
+| [Flag 红包](official/Flag_红包/README.md)     | [文件、源代码](official/Flag_红包/src)               |
 
 ### 来自选手
 

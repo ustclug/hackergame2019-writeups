@@ -9,7 +9,7 @@ docker-compose --compatibility up --build -d
 # 代码结构
 ```app``` 目录中为网站代码。其中 ```app.py``` 会加载 ```ladder.cc``` 编译成的 ```libladder.so``` 作为成语接龙引擎。
 
-```gen.py``` 会处理成语数据库中的成语，简单避免 "一个顶俩" 等明显不可续接的成语，然后生成头文件供 ```ladder.cc``` 使用。
+```gen.py``` 会处理成语数据库中的成语，简单处理必胜必败的情况，然后生成头文件供 ```ladder.cc``` 使用。
 
 ```ladder.cc``` 为成语接龙核心引擎（代码较为凌乱，请见谅）。原理是简单的 [MCTS](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search)，但是对参数做了一定调整，使其能力有所弱化。成语采用 [csr](https://en.wikipedia.org/wiki/Sparse_matrix#Compressed_sparse_row_(CSR,_CRS_or_Yale_format)) 稀疏有向图格式存储。
 
