@@ -6,8 +6,6 @@
 
 若大家对本题解有任何疑问或改进建议，欢迎 [提 issue](https://github.com/ustclug/hackergame2019-writeups/issues/new)
 
-**还没有详细题解的题目会在这几天陆续补充，请耐心等待！**
-
 ## 目录
 
 ### 官方题解
