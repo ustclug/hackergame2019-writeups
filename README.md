@@ -2,7 +2,7 @@
 
 本文档收集整理了中国科学技术大学第六届信息安全大赛的官方与非官方题解。
 
-该仓库仍在活跃更新中，欢迎各位选手以 Pull Request 的形式提交自己的 write-up （players 目录）。
+该仓库仍在活跃更新中，欢迎各位选手以 Pull Request 的形式提交自己的 write-up （players 目录下以自己的昵称创建新文件夹）。
 
 若大家对本题解有任何疑问或改进建议，欢迎 [提 issue](https://github.com/ustclug/hackergame2019-writeups/issues/new)
 
@@ -50,6 +50,12 @@
 [Coxxs](https://coxxs.me/1321)
 
 [XhyEax](players/Xhy)
+
+[三日月綾香](players/三日月綾香)
+
+[sparkcyf](players/sparkcyf)
+
+[隐式类型转换](https://www.nottres.com/nonetype/ustc-hackergame-2019-writeup.html)
 
 [Merg1n](players/Merg1n)
 
