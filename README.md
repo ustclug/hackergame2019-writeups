@@ -57,6 +57,8 @@
 
 [隐式类型转换](https://www.nottres.com/nonetype/ustc-hackergame-2019-writeup.html)
 
+[Merg1n](players/Merg1n)
+
 ## 其他资源
 
 - [中国科学技术大学第五届信息安全大赛题解](https://github.com/ustclug/hackergame2018-writeups)
