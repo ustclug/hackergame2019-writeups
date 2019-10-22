@@ -58,6 +58,17 @@ ffmpeg -skip_frame nokey -i output.mp4 -vsync 0 -r 30 -f image2 thumbnails-%02d.
 
 我也很好奇是否有只用 `ffmpeg` 完成本题的做法，有的话欢迎投稿你的 wp（
 
+**2019-10-22 19:45 Update**: 一开始试过用 `ffmpeg` 去掉重复帧，但是看到输出里面 `speed` 和 `fps` 都很慢，误以为需要花费远大于视频总时间的时间来处理，所以当成不可行了。现在我又试了几个用 `ffmpeg` 处理的方法，都是可以在可接受时间内获得结果的。
+
+现在几个使用 `ffmpeg` 完成此题的详细的讨论/题解可以参见：
+
+- https://github.com/ustclug/hackergame2019-writeups/issues/2
+- https://github.com/ustclug/hackergame2019-writeups/issues/19
+- [https://github.com/ustclug/hackergame2019-writeups/blob/master/players/sparkcyf/writeup-%E4%B8%89%E6%95%99%E5%A5%87%E5%A6%99%E5%A4%9C.md](https://github.com/ustclug/hackergame2019-writeups/blob/master/players/sparkcyf/writeup-三教奇妙夜.md)
+- https://www.nottres.com/nonetype/ustc-hackergame-2019-writeup.html
+- https://github.com/ustclug/hackergame2019-writeups/tree/master/players/xukl
+- [https://github.com/ustclug/hackergame2019-writeups/blob/master/players/stevapple/%E4%B8%89%E6%95%99%E5%A5%87%E5%A6%99%E5%A4%9C/README.md](https://github.com/ustclug/hackergame2019-writeups/blob/master/players/stevapple/三教奇妙夜/README.md)
+
 ## 花絮
 
 我一开始想用非线编软件来出这道题的，但是对于一个 ~12h 的视频项目来说，编辑和导出都是一种折磨，最后一次尝试导出的时候还把我的电脑搞到 kernel panic 了，于是转 `ffmpeg` 了。
