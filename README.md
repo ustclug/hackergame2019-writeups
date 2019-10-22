@@ -30,7 +30,7 @@
 | [献给最好的你](official/献给最好的你/README.md) | [文件、源代码](official/献给最好的你/src)          |
 | [驴啃计算器](official/驴啃计算器/README.md)         | [文件、源代码](official/驴啃计算器/src)                 |
 | [天书残篇](official/天书残篇/README.md) | [文件、源代码](official/天书残篇/src)            |
-| [我想要个家（源代码暂缺）](official/我想要个家/README.md)     | [文件、源代码](official/我想要个家/src)                |
+| [我想要个家](official/我想要个家/README.md)     | [文件、源代码](official/我想要个家/src)                |
 | [十次方根](official/十次方根/README.md) | [文件、源代码](official/十次方根/src) |
 | [被泄漏的姜戈](official/被泄漏的姜戈/README.md)       | [文件、源代码](https://github.com/openlug/django-common)                |
 | [无限猴子定理](official/无限猴子定理/README.md)           | [文件、源代码](official/无限猴子定理/src)                  |
