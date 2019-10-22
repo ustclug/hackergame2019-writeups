@@ -1,0 +1,1 @@
+$safari.inject("document.getElementsByTagName('button')[0].disabled = null")
