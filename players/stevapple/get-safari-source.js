@@ -1,0 +1,1 @@
+$quicklook.open({text: $context.safari.items.source})
