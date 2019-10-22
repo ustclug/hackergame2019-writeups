@@ -58,6 +58,14 @@ ffmpeg -skip_frame nokey -i output.mp4 -vsync 0 -r 30 -f image2 thumbnails-%02d.
 
 我也很好奇是否有只用 `ffmpeg` 完成本题的做法，有的话欢迎投稿你的 wp（
 
+参考 https://stackoverflow.com/questions/37088517/ffmpeg-remove-sequentially-duplicate-frames 删除重复帧然后把帧抽成图片
+
+```
+ffmpeg -i input.mp4 -vf mpdecimate,setpts=N/FRAME_RATE/TB out.mp4
+ffmpeg -i out.mp4 -f image2 %02d.png
+```
+
+然后就可以获取到一共全部十三张图片（
 ## 花絮
 
 我一开始想用非线编软件来出这道题的，但是对于一个 ~12h 的视频项目来说，编辑和导出都是一种折磨，最后一次尝试导出的时候还把我的电脑搞到 kernel panic 了，于是转 `ffmpeg` 了。
