@@ -36,7 +36,7 @@ $array=New-Object 'int[,]' 70, 70
 recursive (Resolve-Path Down).ProviderPath 70
 
 ```
-输出
+输出（比隔壁官方writeup快多了www）
 ```
 ............................
 flag{...
@@ -118,3 +118,5 @@ contract Attacker {
 }
 
 ```
+
+![L513SMUbaOg8uxf.png](https://i.loli.net/2019/10/22/d1pXV4QOg2EeLko.png)
