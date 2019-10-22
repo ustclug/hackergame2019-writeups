@@ -28,7 +28,7 @@
 | [三教奇妙夜](official/三教奇妙夜/README.md)       | [文件、源代码](official/三教奇妙夜/src)                 |
 | [小 U 的加密](official/小_U_的加密/README.md)             | [文件、源代码](official/小_U_的加密/src)                  |
 | [献给最好的你](official/献给最好的你/README.md) | [文件、源代码](official/献给最好的你/src)          |
-| [驴啃计算器（未完成）](official/驴啃计算器/README.md)         | [文件、源代码](official/驴啃计算器/src)                 |
+| [驴啃计算器](official/驴啃计算器/README.md)         | [文件、源代码](official/驴啃计算器/src)                 |
 | [天书残篇](official/天书残篇/README.md) | [文件、源代码](official/天书残篇/src)            |
 | [我想要个家（源代码暂缺）](official/我想要个家/README.md)     | [文件、源代码](official/我想要个家/src)                |
 | [十次方根](official/十次方根/README.md) | [文件、源代码](official/十次方根/src) |
