@@ -2,21 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 int main(int argc, char *argv[]){
-    char *source, *dest, key, fBuffer[1], tBuffer[20];
-    FILE *fSource, *fDest;
-    source = "flag.enc";
-    dest = "flag.midi";
+    char key, *buffer;
+    FILE *source, *dest;
     key = '\071';
-    fSource = fopen(source, "rb");
-    fDest = fopen(dest, "wb");
-    while(!feof(fSource)){
-        fread(fBuffer, 1, 1, fSource);
-        if(!feof(fSource)){
-            *fBuffer = *fBuffer ^ key;
-            fwrite(fBuffer, 1, 1, fDest);
-		}
+    source = fopen("flag.enc", "rb");
+    dest = fopen("flag.midi", "wb");
+    while (!feof(source)) {
+        fread(buffer, 1, 1, source);
+        if (!feof(source)) {
+            *buffer ^= key;
+            fwrite(buffer, 1, 1, dest);
+        }
     }
-    fclose(fSource);
-    fclose(fDest);
+    fclose(source);
+    fclose(dest);
     return 0;
 }

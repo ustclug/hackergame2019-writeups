@@ -10,7 +10,7 @@ int main(int argc, char* argv[]) {
     p(t[0] ^ 0x4D);
     p(t[1] ^ 0x54);
     p(t[2] ^ 0x68);
-	p(t[3] ^ 0x64);
+    p(t[3] ^ 0x64);
     fclose(f);
     return 0;
 }

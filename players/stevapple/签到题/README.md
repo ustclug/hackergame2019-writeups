@@ -6,6 +6,6 @@
 document.getElementsByTagName('button')[0].disabled = null
 ```
 
-注入 Javascript 可以使用快捷指令（aka. 捷径），也可以使用[JSBox 脚本](enable-button.js)。
+注入 Javascript 可以使用快捷指令（aka. 捷径），也可以使用 [JSBox 脚本](enable-button.js)。
 
 随后提交 token，获得 flag。
