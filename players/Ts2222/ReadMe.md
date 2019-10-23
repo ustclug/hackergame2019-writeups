@@ -1,12 +1,23 @@
 # 2019 中科大萌新赛WP
 
 这次比赛真的很让人涨知识，5星好评下次还来233333
+
 第一次写wp不会排版...各位大佬凑活看嘤嘤嘤
 
-官方题解： 
-[看这里]: https://github.com/ustclug/hackergame2019-writeups
+官方题解： https://github.com/ustclug/hackergame2019-writeups
 
 这次记录一下跟官方思路不太一样的几道题
+
+## 我想有个家
+
+	这个题看舍友做的头疼，于是就直接想逆向方法了2333(出题人别打我
+	这个题用ida看，静态编译，猜是用golang编译的，没有符号，就用idagolang-helper把符号还原一遍
+	使用方法就...改完go版本从上到下全按一遍按钮然后按ok(?
+	之后找到main_main,翻到下面看到7个os.exit()
+	猜想这个os.exit()就是失败之后退出的必经之路
+	直接Patch！让exit直接给我return！
+	结果就是...太爽了！舍友都看呆了！(然后他自己逆了半天没工具就放弃了2333
+	墙裂推荐大家试一试patch做法，太爽了！
 
 ## 驴啃计算器
 	http://blog.sina.com.cn/s/blog_a661ecd501012xsr.html
@@ -15,8 +26,12 @@
 
 ## Flag红包
 	其实这个题大概就是难在编程和选择策略
-	我的策略是这样：每次可以接龙的词都是一个list，首先保证不会被机器人搞死，也就是接的词语的末尾音再往下接的成语的末尾音不能接不出来(github有个anti-yigedinglia里面记录了有哪些音结尾必是死局)。
-	其次就是进攻性策略：因为每次接龙的词都是一个list，每次我都会选择一个机器人接龙接得费劲的词，也就是说，我将list中每一个结尾音能对的成语的数量从小到大排序，每次返回给机器人的词的结尾音能对上的词都是相对最少的。我称此策略为`置于死地而后生`
+	我的策略是这样：每次可以接龙的词都是一个list，首先保证不会被机器人搞死，
+	也就是接的词语的末尾音再往下接的成语的末尾音不能接不出来
+	(github有个anti-yigedinglia里面记录了有哪些音结尾必是死局)。
+	其次就是进攻性策略：因为每次接龙的词都是一个list，每次我都会选择一个机器人接龙接得费劲的词，
+	也就是说，我将list中每一个结尾音能对的成语的数量从小到大排序，每次返回给机器人的词的结尾音能对上的词都是相对最少的。
+	我称此策略为`置于死地而后生`
 	之后就是编程了..见代码
 
 ## Shell 骇客
@@ -24,9 +39,13 @@
 	第一个我感觉可以直接用pwntools的shellcraft，但是因为shellcraft有的时候成功率不高，所以直接到网上找shellcode
 	第二个和第三个就是纯ascii的编写了，以前做实验研究过这个现在用上了233333
 	有一个工具叫alpha3，专门解决纯ascii shellcode问题，这里有个链接专门介绍以及分享了这个工具build后的版本
-[看这里]:https://www.jianshu.com/p/8ae8c055e35c
-	剩下的就是找shellcode了，这里说个问题，就是最好找最原始的没有压缩长度的那种shellcode，如果运气不好那种压缩长度的shellcode转ascii之后不会执行
-	举个例子：比如说用eax寄存器传参，如果shellcode开头有对eax寄存器进行操作的可能会失败(当然syscall或者int 80都是要eax寄存器的)大概的原因没有细查，我估计ascii shellcode都是从eax寄存器的存址寻址的，eax刚开始就乱了后面就没法继续向下执行其他的寻址操作了，不过调用系统调用还是可以的。
+	https://www.jianshu.com/p/8ae8c055e35c
+	剩下的就是找shellcode了，这里说个问题，就是最好找最原始的没有压缩长度的那种shellcode，
+	如果运气不好那种压缩长度的shellcode转ascii之后不会执行
+	举个例子：比如说用eax寄存器传参，如果shellcode开头有对eax寄存器进行操作的可能会失败
+	(当然syscall或者int 80都是要eax寄存器的)
+	大概的原因没有细查，我估计ascii shellcode都是从eax寄存器的存址寻址的，
+	eax刚开始就乱了后面就没法继续向下执行其他的寻址操作了，不过调用系统调用还是可以的。
 
 ## 达拉崩吧大冒险
 	因为没怎么做过web，所以我竟然用python的websocket来测试整数溢出...awsl
@@ -43,17 +62,16 @@
 
 ## 小U的加密
 	这里提一下xortool和Audacity
-	xortool:[xortool]:https://github.com/hellman/xortool
+	xortool:https://github.com/hellman/xortool
 	这个工具是可以猜xor密钥长度的，通常会给出xor密钥长度的概率
 	Audacity这个软件我感觉就可以通吃所有misc题中音频题了，真的很好用
 	因为文件看起来像是wav那样到最后都是00 ff 00 ff这样结构，只不过00变成了39，于是就用0x39异或
 	不过用Audacity读midi会出现错位
-
-​	![1571792597846](C:\Users\Ts2\AppData\Roaming\Typora\typora-user-images\1571792597846.png)
-
-	像这样，只需要在钢琴键的位置右键点缩放到合适大小就可以读到flag
+	只需要在钢琴键的位置右键点缩放到合适大小就可以读到flag
 
 
 大概就这些，剩下的就和官方题解差不多了
+
 剩下的...逆不出来的就angr，math不出来的就Z3
+
 我太菜了orz
