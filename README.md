@@ -71,6 +71,8 @@
 
 [huggy](https://blog.huggy.moe/posts/2019/3-ustclug-ctf-writeups/)
 
+[ii](players/ii)
+
 ## 其他资源
 
 - [知乎：参加中国科学技术大学第六届信息安全大赛（Hackergame 2019）是怎样一种体验？](https://www.zhihu.com/question/351947330)
