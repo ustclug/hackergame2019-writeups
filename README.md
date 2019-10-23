@@ -43,37 +43,24 @@
 
 ### 来自选手
 
-[咕咕咕](players/咕咕咕)
-
-[Coxxs](https://coxxs.me/1321)
-
-[XhyEax](https://xhyeax.github.io/2019/10/22/hackersgame-2019-writeup/)
-
-[三日月綾香](players/三日月綾香)
-
-[sparkcyf](players/sparkcyf)
-
-[隐式类型转换](https://www.nottres.com/nonetype/ustc-hackergame-2019-writeup.html)
-
-[Merg1n](players/Merg1n)
-
-[猫神様のメモ帳](players/猫神様のメモ帳)
-
-[xukl](players/xukl)
-
-[stevapple](players/stevapple)
-
-[akiz](players/akiz)
-
-[yusanshi](players/yusanshi)
-
-[Genteure](players/genteure)
-
-[huggy](https://blog.huggy.moe/posts/2019/3-ustclug-ctf-writeups/)
-
-[ii](players/ii)
-
-[EkiXu](players/Eki)
+| write-up | 备注 | 包含题目 |
+| - | - | - |
+| [咕咕咕](players/咕咕咕) | | |
+| [Coxxs](https://coxxs.me/1321) | | |
+| [XhyEax](https://xhyeax.github.io/2019/10/22/hackersgame-2019-writeup/) | | |
+| [三日月綾香](players/三日月綾香) | | |
+| [sparkcyf](players/sparkcyf) | | |
+| [隐式类型转换](https://www.nottres.com/nonetype/ustc-hackergame-2019-writeup.html) | | |
+| [Merg1n](players/Merg1n) | | |
+| [猫神様のメモ帳](players/猫神様のメモ帳) | | |
+| [xukl](players/xukl) | | |
+| [stevapple](players/stevapple) | | |
+| [akiz](players/akiz) | | |
+| [yusanshi](players/yusanshi) | | |
+| [Genteure](players/genteure) | | |
+| [huggy](https://blog.huggy.moe/posts/2019/3-ustclug-ctf-writeups/) | | |
+| [ii](players/ii) | | |
+| [EkiXu](players/Eki) | | |
 
 ## 其他资源
 
