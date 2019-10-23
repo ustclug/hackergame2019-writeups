@@ -63,6 +63,7 @@
 | [EkiXu](players/Eki) | | |
 | [Indexyz](https://blog.indexyz.me/archives/2019-ustc-hackergame-writeup/) | | |
 | [Ts2222](players/Ts2222) | | |
+| [cvhc](players/cvhc) | | |
 
 ## 其他资源
 
