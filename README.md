@@ -61,6 +61,7 @@
 | [huggy](https://blog.huggy.moe/posts/2019/3-ustclug-ctf-writeups/) | | |
 | [ii](players/ii) | | |
 | [EkiXu](players/Eki) | | |
+| [Indexyz](https://blog.indexyz.me/archives/2019-ustc-hackergame-writeup/) | | |
 
 ## 其他资源
 
