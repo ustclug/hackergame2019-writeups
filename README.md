@@ -69,6 +69,8 @@
 
 [Genteure](players/genteure)
 
+[huggy](https://blog.huggy.moe/posts/2019/3-ustclug-ctf-writeups/)
+
 [ii](players/ii)
 
 ## 其他资源
