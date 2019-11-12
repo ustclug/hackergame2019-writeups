@@ -45,27 +45,27 @@
 
 | write-up | 备注 | 包含题目 |
 | - | - | - |
-| [咕咕咕](players/咕咕咕) | | |
-| [Coxxs](https://coxxs.me/1321) | | |
-| [XhyEax](https://xhyeax.github.io/2019/10/22/hackersgame-2019-writeup/) | | |
-| [三日月綾香](players/三日月綾香) | | |
-| [sparkcyf](players/sparkcyf) | | |
-| [隐式类型转换](https://www.nottres.com/nonetype/ustc-hackergame-2019-writeup.html) | | |
-| [Merg1n](players/Merg1n) | | |
-| [猫神様のメモ帳](players/猫神様のメモ帳) | | |
-| [xukl](players/xukl) | | |
-| [stevapple](players/stevapple) | | |
-| [akiz](players/akiz) | | |
-| [yusanshi](players/yusanshi) | | |
-| [Genteure](players/genteure) | | |
-| [huggy](https://blog.huggy.moe/posts/2019/3-ustclug-ctf-writeups/) | | |
-| [ii](players/ii) | | |
-| [EkiXu](players/Eki) | | |
-| [Indexyz](https://blog.indexyz.me/archives/2019-ustc-hackergame-writeup/) | | |
-| [Ts2222](players/Ts2222) | | |
-| [cvhc](players/cvhc) | | |
-| [ranwen](https://github.com/ranwen/USTC-Hackergame2019-WP) | | |
-| [7feilee](players/7feilee) | | |
+| [咕咕咕](players/咕咕咕) | | 白与夜、信息安全 2077、宇宙终极问题、网页读取器、达拉崩吧大冒险、Happy LUG、正则验证器、不同寻常的 Python 考试、小巧玲珑的 ELF、Shell 骇客、三教奇妙夜、小 U 的加密、献给最好的你、驴啃计算器、天书残篇、我想要个家、十次方根、被泄漏的姜戈、无限猴子定理、PowerShell 迷宫、韭菜银行、没有 BUG 的教务系统、失落的圣物、大整数分解锦标赛、Flag 红包 |
+| [Coxxs](https://coxxs.me/1321) | | 白与夜、信息安全 2077、网页读取器、达拉崩吧大冒险、Happy LUG、Shell 骇客、小 U 的加密、天书残篇、我想要个家、宇宙终极问题、无限猴子定理、PowerShell 迷宫、Flag 红包 |
+| [XhyEax](https://xhyeax.github.io/2019/10/22/hackersgame-2019-writeup/) | | 签到题、白与夜、信息安全 2077、宇宙终极问题-42、网页读取器、达拉崩吧大冒险、Happy LUG、正则验证器、小巧玲珑的 ELF、Shell 骇客、三教奇妙夜、小 U 的加密、献给最好的你、我想要个家、被泄漏的姜戈、PowerShell 迷宫、韭菜银行、没有 BUG 的教务系统-1 |
+| [三日月綾香](players/三日月綾香) | | 小巧玲珑的 ELF、三教奇妙夜、小 U 的加密、被泄漏的姜戈 |
+| [sparkcyf](players/sparkcyf) | | 三教奇妙夜 |
+| [隐式类型转换](https://www.nottres.com/nonetype/ustc-hackergame-2019-writeup.html) | | 白与夜、信息安全 2077、宇宙终极问题、网页读取器、达拉崩吧大冒险、Happy LUG、正则验证器、不同寻常的 Python 考试、小巧玲珑的 ELF、Shell 骇客、三教奇妙夜、小 U 的加密、献给最好的你、天书残篇、我想要个家、被泄漏的姜戈、没有 BUG 的教务系统-1 |
+| [Merg1n](players/Merg1n) | | 白与夜、信息安全 2077、宇宙终极问题、网页读取器、达拉崩吧大冒险、Happy LUG、正则验证器、不同寻常的 Python 考试、小巧玲珑的 ELF、Shell 骇客、三教奇妙夜、小 U 的加密、献给最好的你、驴啃计算器、天书残篇、我想要个家、十次方根、被泄漏的姜戈、无限猴子定理、PowerShell 迷宫、韭菜银行、无法利用的漏洞、没有 BUG 的教务系统、失落的圣物、Flag 红包 |
+| [猫神様のメモ帳](players/猫神様のメモ帳) | | PowerShell 迷宫、三教奇妙夜、献给最好的你、达拉崩吧大冒险 |
+| [xukl](players/xukl) | | 三教奇妙夜 |
+| [stevapple](players/stevapple) | | 签到题、白与夜、信息安全 2077、宇宙终极问题-42、网页读取器、达拉崩吧大冒险、Happy LUG、正则验证器、三教奇妙夜、小 U 的加密、献给最好的你、PowerShell 迷宫、韭菜银行-flag1、没有 BUG 的教务系统-1 |
+| [akiz](players/akiz) | | PowerShell 迷宫、三教奇妙夜、韭菜银行 |
+| [yusanshi](players/yusanshi) | | Flag 红包 |
+| [Genteure](players/genteure) | | PowerShell 迷宫 |
+| [huggy](https://blog.huggy.moe/posts/2019/3-ustclug-ctf-writeups/) | | 签到题、白与夜、信息安全 2077、宇宙终极问题-42、网页读取器、达拉崩吧大冒险、Happy LUG、献给最好的你、我想要个家、被泄漏的姜戈 |
+| [ii](players/ii) | | 宇宙终极问题、驴啃计算器 |
+| [EkiXu](players/Eki) | | 签到题、白与夜、信息安全 2077、宇宙终极问题-42、网页读取器、达拉崩吧大冒险、Happy LUG、正则验证器、不同寻常的 Python 考试、小巧玲珑的 ELF、Shell 骇客、三教奇妙夜、驴啃计算器、我想要个家、没有 BUG 的教务系统 |
+| [Indexyz](https://blog.indexyz.me/archives/2019-ustc-hackergame-writeup/) | | 签到题、白与夜、信息安全 2077、宇宙终极问题-42、网页读取器、达拉崩吧大冒险、Happy LUG、正则验证器、小巧玲珑的 ELF、Shell 骇客-1、三教奇妙夜、献给最好的你、天书残篇、我想要个家、被泄漏的姜戈、PowerShell 迷宫、韭菜银行、没有 BUG 的教务系统-1 |
+| [Ts2222](players/Ts2222) | | 我想有个家、驴啃计算器、Flag 红包、Shell 骇客、达拉崩吧大冒险、小巧玲珑的 ELF、三教奇妙夜、小 U 的加密 |
+| [cvhc](players/cvhc) | | 2077 海底捞针 |
+| [ranwen](https://github.com/ranwen/USTC-Hackergame2019-WP) | | 签到题、白与夜、信息安全 2077、宇宙终极问题、网页读取器、达拉崩吧大冒险、Happy LUG、正则验证器、不同寻常的 Python 考试、小巧玲珑的 ELF、Shell 骇客、三教奇妙夜、小 U 的加密、献给最好的你、驴啃计算器、天书残篇、我想要个家、十次方根、被泄漏的姜戈、PowerShell 迷宫、韭菜银行-flag1、没有 BUG 的教务系统-1 |
+| [7feilee](players/7feilee) | | 十次方根 |
 
 ## 其他资源
 
