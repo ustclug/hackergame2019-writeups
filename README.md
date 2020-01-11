@@ -6,6 +6,8 @@
 
 若大家对本题解有任何疑问或改进建议，欢迎 [提 issue](https://github.com/ustclug/hackergame2019-writeups/issues/new)
 
+**比赛平台存档地址：[https://hack2019.lug.ustc.edu.cn/](https://hack2019.lug.ustc.edu.cn/)**
+
 ## 目录
 
 ### 官方题解
