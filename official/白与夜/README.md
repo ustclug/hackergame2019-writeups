@@ -1,5 +1,15 @@
 # 白与夜
 
+- 题目分类：general
+
+- 题目分值：100
+
+这是一个关于白猫，嗯不对，关于黑猫的故事。
+
+[打开/下载题目](./src/WhiteAndBlack.html)
+
+---
+
 这里是~~全场除签到题外最水的题的~~ writeup
 
 ![](./images/newcat.png)

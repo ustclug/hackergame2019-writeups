@@ -1,5 +1,19 @@
 # 网页读取器
 
+- 题目分类：web
+
+- 题目分值：150
+
+今年，刚刚学会网络编程的小 T 花了一点时间，写了一个非常简单的网站：输入一个 URL，返回对应的内容。
+
+不过小 T 想对用户访问的站点进行一些限制，所以他决定自己来解析 URL，阻止不满足要求的请求。这样也顺便解决了 SSRF（Server-Side Request Forgery, 服务器端请求伪造）的问题。
+
+想象很美好，但小 T 真的彻底解决了问题吗？
+
+[打开/下载题目](http://202.38.93.241:10020/)
+
+---
+
 本题的灵感来源于 *A New Era of SSRF - Exploiting URL Parser in Trending Programming Languages!*。而这道题主要的点就是 URL 的 parser 和 requester 的不一致性导致的意料之外的 SSRF 问题。
 
 ## 关于 URI（统一资源标志符）

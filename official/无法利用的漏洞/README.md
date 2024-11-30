@@ -1,4 +1,24 @@
 # 无法利用的漏洞
+
+- 题目分类：binary
+
+- 题目分值：300
+
+「我写了一个不会被黑的程序！」
+
+「谁信啊，难不成你就写了个 Hello, world？」
+
+「当然不。我把编译器所有安全加固的选项都开启了，就算我故意留漏洞，你也没办法利用。」
+
+「嗯？」
+
+`nc 202.38.93.241 10014` 或者使用 [网页终端](http://202.38.93.241:10015/?token={token})
+
+Hint: Do you know how to make syscall faster?
+
+[打开/下载题目](src/impossible)
+
+---
 本题考查利用vsyscall实现漏洞利用，利用条件是栈上的数据没有清理干净同时系统开启了vsyscall。这道题是希望理解了基本ROP的同学通过提示“Do you know how to make syscall faster?”学习vsyscall的利用方法。这个漏洞有趣的地方在于，只要满足利用条件，即使开了aslr而且编译器保护全开也能劫持控制流。
 
 # 解答
