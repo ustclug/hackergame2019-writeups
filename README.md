@@ -8,6 +8,8 @@
 
 **比赛平台存档地址：[https://hack2019.lug.ustc.edu.cn/](https://hack2019.lug.ustc.edu.cn/)**（已关闭）
 
+[比赛元数据存档](archive/)
+
 ## 目录
 
 ### 官方题解
